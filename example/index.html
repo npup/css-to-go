@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic css</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="container" style="position: relative">
+      <label
+        style="position: absolute; top: 0.5em; right: 1em; text-align: right"
+      >
+        <input
+          type="checkbox"
+          id="theme-switch"
+          onclick="document.body.classList.toggle('theme--light', this.checked)"
+        />
+        Light mode
+      </label>
+
+      <h1>Example</h1>
+      <p>
+        This is an example of basic css. It should help to quickly make a plain
+        HTML document look <a href="/">somewhat nice</a>.
+      </p>
+
+      <h2>Paragraph text</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat
+        repudiandae eveniet dolorem, debitis eos, optio earum, tempora adipisci
+        excepturi neque sit sunt officia! Nobis fugiat placeat nisi odio maxime!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et
+        accusamus itaque ut expedita debitis harum quisquam necessitatibus!
+        Accusamus illum, corporis autem consequatur ipsa pariatur perferendis
+        officiis aspernatur est quaerat.
+      </p>
+
+      <h2>Lists</h2>
+
+      <h3>Unordered list</h3>
+      <ul>
+        <li>En sak</li>
+        <li>En annan sak</li>
+        <li>Sak 3</li>
+        <li>Näst sist!</li>
+        <li>THE END</li>
+      </ul>
+
+      <h3>Ordered list</h3>
+      <ol>
+        <li>Alla</li>
+        <li>goda</li>
+        <li>ting</li>
+        <li>är TRE</li>
+      </ol>
+
+      <h2>Forms and form controls</h2>
+      <form action="#">
+        <h3>Short text</h3>
+        <label>
+          Name
+          <input type="text" placeholder="Full name" />
+        </label>
+
+        <h3>Checkboxes, column</h3>
+        <div>
+          Select accepted apa names
+          <div class="form-controls--col">
+            <label>
+              <input type="checkbox" />
+              Ola
+            </label>
+            <label>
+              <input type="checkbox" />
+              Kent
+            </label>
+            <label>
+              <input type="checkbox" />
+              Birger
+            </label>
+          </div>
+        </div>
+
+        <h3>Checkboxes, row</h3>
+        <div>
+          Select accepted apa names
+          <div class="form-controls--row">
+            <label>
+              <input type="checkbox" />
+              Ola
+            </label>
+            <label>
+              <input type="checkbox" />
+              Kent
+            </label>
+            <label>
+              <input type="checkbox" />
+              Birger
+            </label>
+          </div>
+        </div>
+
+        <h3>Radio buttons, column</h3>
+        <div>
+          Select preferred apa name
+          <div class="form-controls--col">
+            <label>
+              <input type="radio" name="apa" value="Ola" />
+              Ola
+            </label>
+            <label>
+              <input type="radio" name="apa" value="Sven" />
+              Sven
+            </label>
+            <label>
+              <input type="radio" name="apa" value="Bodil" />
+              Bodil
+            </label>
+          </div>
+        </div>
+
+        <h3>Radio buttons, row</h3>
+        <div>
+          Select preferred apa name
+          <div class="form-controls--row">
+            <label>
+              <input type="radio" name="apa-row" value="Ola" />
+              Ola
+            </label>
+            <label>
+              <input type="radio" name="apa-row" value="Sven" />
+              Sven
+            </label>
+            <label>
+              <input type="radio" name="apa-row" value="Bodil" />
+              Bodil
+            </label>
+          </div>
+        </div>
+
+        <label>
+          Välj
+          <select>
+            <option value="SE">Sverige</option>
+            <option value="NO">Norge</option>
+            <option value="DK">Danmark</option>
+          </select>
+        </label>
+
+        <label>
+          Mitt sommarlov
+          <textarea cols="30" rows="10"></textarea>
+        </label>
+
+        <button type="button">Hämta data</button>
+        <input type="submit" value="Skicka" />
+      </form>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, tenetur.
+        Vitae aliquid impedit illum officia quam at fuga aperiam tempore qui
+        tenetur exercitationem sint doloremque eum veniam quas, quibusdam dicta!
+      </p>
+
+      <h2>Buttons</h2>
+
+      <button type="button">General button</button>
+      <button type="button" class="general-yes">"Positive button", CTA</button>
+      <button type="button" class="general-no">
+        "Negative button", critical action
+      </button>
+
+      <h2>Filler text</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aspernatur
+        culpa cupiditate nesciunt iure sequi dolor a? Iste sint numquam expedita
+        rerum suscipit. Inventore odio natus ipsam id, maiores dolore.
+      </p>
+    </div>
+  </body>
+</html>

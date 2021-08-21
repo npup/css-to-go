@@ -1,0 +1,26 @@
+html,
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: var(--margin--headings);
+}
+
+ul,
+ol {
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+ol {
+  list-style-position: inside;
+}

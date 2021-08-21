@@ -1,0 +1,20 @@
+@import url("_variables.css");
+@import url("_reset.css");
+@import url("_basic-elements.css");
+
+@import url("_links.css");
+@import url("_lists.css");
+@import url("_forms.css");
+
+.formatted-date {
+  font-family: var(--font-formatted-date);
+}
+.formatted-numerical {
+  font-family: var(--font-formatted-numerical);
+}
+
+.container {
+  padding: var(--padding-container);
+  margin: var(--margin-container);
+  max-width: var(--maxwidth-container);
+}

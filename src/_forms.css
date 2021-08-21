@@ -1,0 +1,88 @@
+label {
+  display: block;
+  margin: var(--margin-label);
+  padding: var(--padding-label);
+}
+
+label > input[type="text"] {
+  display: block;
+  margin-top: var(--margintop--input-text);
+  padding: var(--input-text-padding);
+}
+
+label > textarea {
+  display: block;
+  margin-top: var(--margintop--textarea);
+  padding: var(--textarea-padding);
+  border-radius: var(--border-radius);
+}
+
+label > input[type="checkbox"] {
+  margin-right: var(--marginright--checkbox);
+  transform: var(--transform--checkbox);
+}
+
+label > input[type="radio"] {
+  margin-right: var(--marginright--radio);
+  transform: var(--transform--radio);
+}
+
+label > select {
+  display: block;
+  margin-top: var(--margintop--select);
+  padding: var(--padding--select);
+  border-radius: var(--border-radius);
+}
+
+input[type="submit"],
+button[type="button"] {
+  border: 0;
+  margin: var(--margin-button);
+  padding: var(--padding-button);
+  background-color: var(--color-BLUE);
+  color: var(--color-WHITE2);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--button-boxshadow--off);
+  transition: var(--button-boxshadow-transition);
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+button[type="button"]:hover,
+button[type="button"]:focus {
+  box-shadow: var(--button-boxshadow--on);
+}
+
+input[type="submit"].general-yes,
+button[type="button"].general-yes {
+  background-color: var(--color-general--yes);
+  color: var(--color-WHITE2);
+}
+
+input[type="submit"].general-no,
+button[type="button"].general-no {
+  background-color: var(--color-general--no);
+  color: var(--color-WHITE2);
+}
+
+.form-controls--row {
+  display: flex;
+}
+
+.form-controls--row label {
+  cursor: pointer;
+  flex: 0 1 auto;
+  margin-right: var(--marginright-label--form-controls-row);
+  padding: var(--padding-label--form-controls-row);
+}
+
+.form-controls--col {
+  padding-bottom: var(--paddingbottom--form-controls-col);
+}
+
+.form-controls--col label {
+  margin-left: var(--marginleft-label--form-controls-col);
+  margin-bottom: var(--marginbottom-label--form-controls-col);
+  padding-bottom: var(--paddingbottom-label--form-controls-col);
+}

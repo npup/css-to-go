@@ -1,0 +1,36 @@
+{
+  "name": "css-to-go",
+  "version": "0.9.0",
+  "author": "P.Envall <petter.envall@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/cli.git"
+  },
+  "homepage": "https://github.com/npup/css-to-go#readme",
+  "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
+  "keywords": [
+    "css",
+    "to go",
+    "simple",
+    "bare bones",
+    "global"
+  ],
+  "type": "module",
+  "main": "dist/css-to-go.css",
+  "files": [
+    "dist/*.css",
+    "src/*.css"
+  ],
+  "devDependencies": {
+    "snowpack": "^3.8.6",
+    "cssnano": "^5.0.8",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "npx postcss src/main.css -o dist/css-to-go.css",
+    "dev": "snowpack dev"
+  }
+}

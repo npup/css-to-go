@@ -1,0 +1,14 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-link);
+  transition: var(--transition--color);
+  text-underline-position: under;
+}
+
+a:hover,
+a:active {
+  color: var(--color-link--hover);
+}

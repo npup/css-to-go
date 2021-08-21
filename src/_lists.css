@@ -1,0 +1,9 @@
+li {
+  margin: var(--margin-list-item);
+  padding: var(--padding-list-item);
+  border-radius: var(--border-radius);
+  transition: var(--transition--bgcolor);
+}
+li:hover {
+  background-color: var(--color-row--hover);
+}
