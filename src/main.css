@@ -7,3 +7,9 @@
 @import url("_forms.css");
 
 @import url("_utility-styles/index.css");
+
+.ctg-root {
+  font-family: var(--font-main);
+  background-color: var(--color-background-main);
+  color: var(--color-text-main);
+}

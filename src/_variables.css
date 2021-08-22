@@ -1,4 +1,4 @@
-:root {
+.ctg-root {
   /** base colors */
 
   --color-GREEN: #171;
@@ -9,13 +9,14 @@
   --color-LIGHT_BLUE: #5df;
   --color-WHITE: #fdfdfd;
   --color-WHITE2: #eeffff;
+  --color-GRAY_LIGHT: #dee;
   --color-GRAY: #cdd;
   --color-GRAY2: #9aa;
   --color-BLACK: #222222;
   --color-DARK_BLUE: #046;
 }
 
-:root {
+.ctg-root {
   /** colors */
   --color-background-main: var(--color-BLACK);
   --color-text-main: var(--color-WHITE2);
@@ -31,6 +32,10 @@
   --color-general--yes: var(--color-GREEN);
   --color-general--no: var(--color-RED);
   --color-general--warn: var(--color-ORANGE);
+
+  --color-list-marker: var(--color-LIGHT_BLUE);
+
+  --color-em: var(--color-LIGHT_BLUE);
 
   --color-note: var(--color-text-main);
   --bgcolor-note: var(--color-row--hover);
@@ -95,14 +100,18 @@
   --max-width--copy: 50em;
 }
 
-.ctg-theme--light {
+.ctg-root.ctg-theme--light,
+.ctg-root .ctg-theme--light {
   --color-background-main: var(--color-WHITE2);
   --color-text-main: var(--color-BLACK);
   --color-link: var(--color-BLACK);
   --color-link--hover: var(--color-BLUE);
   --color-link--active: var(--color-BLUE);
 
-  --color-row--hover: var(--color-GRAY);
+  --color-em: var(--color-BLACK);
+  --color-list-marker: var(--color-DARK_BLUE);
+
+  --color-row--hover: var(--color-GRAY_LIGHT);
 
   --color-headings: var(--color-DARK_BLUE);
 
@@ -113,13 +122,13 @@
 }
 
 @media screen and (min-width: 481px) {
-  :root {
+  .ctg-root {
     --padding-container: 1rem 2rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  :root {
+  .ctg-root {
     --margin-container: 0 auto;
     --maxwidth-container: 1024px;
   }

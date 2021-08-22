@@ -1,41 +1,42 @@
-label {
+.ctg-root label {
   display: block;
   margin: var(--margin-label);
   padding: var(--padding-label);
 }
 
-label > input[type="text"] {
+.ctg-root label > input[type="text"] {
   display: block;
   margin-top: var(--margintop--input-text);
   padding: var(--input-text-padding);
 }
 
-label > textarea {
+.ctg-root label > textarea {
   display: block;
   margin-top: var(--margintop--textarea);
   padding: var(--textarea-padding);
   border-radius: var(--border-radius);
 }
 
-label > input[type="checkbox"] {
+.ctg-root label > input[type="checkbox"] {
   margin-right: var(--marginright--checkbox);
   transform: var(--transform--checkbox);
 }
 
-label > input[type="radio"] {
+.ctg-root label > input[type="radio"] {
   margin-right: var(--marginright--radio);
   transform: var(--transform--radio);
 }
 
-label > select {
+.ctg-root label > select {
   display: block;
   margin-top: var(--margintop--select);
   padding: var(--padding--select);
   border-radius: var(--border-radius);
 }
 
-input[type="submit"],
-button[type="button"] {
+.ctg-root input[type="submit"],
+.ctg-root button[type="button"],
+.ctg-root button[type="submit"] {
   border: 0;
   margin: var(--margin-button);
   padding: var(--padding-button);
@@ -47,21 +48,11 @@ button[type="button"] {
   transition: var(--button-boxshadow-transition);
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-button[type="button"]:hover,
-button[type="button"]:focus {
+.ctg-root input[type="submit"]:hover,
+.ctg-root input[type="submit"]:focus,
+.ctg-root button[type="button"]:hover,
+.ctg-root button[type="button"]:focus,
+.ctg-root button[type="submit"]:hover,
+.ctg-root button[type="submit"]:focus {
   box-shadow: var(--button-boxshadow--on);
 }
-
-/* input[type="submit"].general-yes,
-button[type="button"].general-yes {
-  background-color: var(--color-general--yes);
-  color: var(--color-WHITE2);
-}
-
-input[type="submit"].general-no,
-button[type="button"].general-no {
-  background-color: var(--color-general--no);
-  color: var(--color-WHITE2);
-} */

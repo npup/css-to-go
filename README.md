@@ -13,10 +13,10 @@ It makes a _gentle_ reset, and then tends to
 
 There are also a small number of utility classes.  Read more below (_coming_).
 
-
 ## Installation
 
     npm i css-to-go
+
 
 ## Usage
 
@@ -39,3 +39,10 @@ or just link to it inside node_modules.
         href="[path to]/node_modules/css-to-go/dist/css-to-go.min.css"
       />
     </head>
+
+
+## View examples
+
+    npm start
+
+Navigate to http://localhost:3000/

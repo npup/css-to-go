@@ -1,17 +1,15 @@
-body {
-  font-family: var(--font-main);
-  background-color: var(--color-background-main);
-  color: var(--color-text-main);
+.ctg-root h1,
+.ctg-root h2,
+.ctg-root h3,
+.ctg-root h4 {
+  color: var(--color-headings);
 }
 
-p {
+.ctg-root p {
   line-height: var(--line-height-copy);
   max-width: var(--max-width--copy);
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: var(--color-headings);
+.ctg-root em {
+  color: var(--color-em);
 }

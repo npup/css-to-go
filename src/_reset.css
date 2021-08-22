@@ -1,26 +1,31 @@
+.ctg-root,
+.ctg-root *,
 html,
 html * {
   box-sizing: border-box;
 }
 
+body.ctg-root,
 body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.ctg-root h1,
+.ctg-root h2,
+.ctg-root h3,
+.ctg-root h4 {
   margin: var(--margin--headings);
 }
+.ctg-root h2 {
+  font-size: 1.3em;
+}
 
-ul,
-ol {
+.ctg-root ul,
+.ctg-root ol {
+  smargin-top: 0;
   padding: 0;
 }
-ul {
-  list-style-type: none;
-}
-ol {
+.ctg-root ul,
+.ctg-root ol {
   list-style-position: inside;
 }
