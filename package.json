@@ -1,6 +1,6 @@
 {
   "name": "css-to-go",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "author": "P.Envall <petter.envall@gmail.com>",
   "license": "ISC",
   "repository": {
@@ -17,7 +17,7 @@
     "global"
   ],
   "type": "module",
-  "main": "dist/css-to-go.css",
+  "main": "dist/css-to-go.min.css",
   "files": [
     "dist/*.css",
     "src/*.css"
@@ -29,8 +29,12 @@
     "postcss-import": "^14.0.2"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "prebuild": "rm -rf dist && mkdir dist",
-    "build": "npx postcss src/main.css -o dist/css-to-go.css",
+    "build": "npm run build-css:max && npm run build-css:min",
+    "build-css": "npx postcss src/main.css",
+    "build-css:min": "CSS_MINIFY=true npm run build-css -- -o dist/css-to-go.min.css",
+    "build-css:max": "npm run build-css -- -o dist/css-to-go.css",
     "dev": "snowpack dev"
   }
 }

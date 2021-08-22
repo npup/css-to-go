@@ -74,8 +74,9 @@
 
   --padding-container: 0.5rem 1rem;
 
-  --button-boxshadow--off: 0px 0px 5px 4px transparent;
-  --button-boxshadow--on: 0px 0px 5px 4px var(--color-WHITE);
+  --button-boxshadow-shape: 0px 0px 2px 2px;
+  --button-boxshadow--off: var(--button-boxshadow-shape) transparent;
+  --button-boxshadow--on: var(--button-boxshadow-shape) var(--color-WHITE);
 
   --marginright-label--form-controls-row: 1rem;
   --padding-label--form-controls-row: 0 0.5rem 0 0;
@@ -102,7 +103,7 @@
 
   --color-headings: var(--color-DARK_BLUE);
 
-  --button-boxshadow--on: 0px 0px 5px 4px var(--color-GRAY2);
+  --button-boxshadow--on: var(--button-boxshadow-shape) var(--color-BLACK);
 }
 
 @media screen and (min-width: 481px) {
