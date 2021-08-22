@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic css</title>
+    <title>CTG - CSS To Go</title>
     <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
-    <div class="container" style="position: relative">
+    <div class="ctg-container" style="position: relative">
       <label
         style="position: absolute; top: 0.5em; right: 1em; text-align: right"
       >
         <input
           type="checkbox"
           id="theme-switch"
-          onclick="document.body.classList.toggle('theme--light', this.checked)"
+          onclick="document.body.classList.toggle('ctg-theme--light', this.checked)"
         />
         Light mode
       </label>
@@ -41,19 +41,19 @@
 
       <h3>Unordered list</h3>
       <ul>
-        <li>En sak</li>
-        <li>En annan sak</li>
-        <li>Sak 3</li>
-        <li>Näst sist!</li>
+        <li>A thing</li>
+        <li>Another thing</li>
+        <li>Thing 3</li>
+        <li>Next-to-last!</li>
         <li>THE END</li>
       </ul>
 
       <h3>Ordered list</h3>
       <ol>
-        <li>Alla</li>
-        <li>goda</li>
-        <li>ting</li>
-        <li>är TRE</li>
+        <li>All</li>
+        <li>good</li>
+        <li>things</li>
+        <li>comes in THREES</li>
       </ol>
 
       <h2>Forms and form controls</h2>
@@ -65,87 +65,103 @@
         </label>
 
         <h3>Checkboxes, column</h3>
+        <p class="ctg-note ctg-note--info">
+          The below layout uses the utility class
+          <code>ctg-form-controls--col</code>
+        </p>
         <div>
-          Select accepted apa names
-          <div class="form-controls--col">
+          Select the saxophonists you've listened to:
+          <div class="ctg-form-controls--col">
             <label>
-              <input type="checkbox" />
-              Ola
+              <input type="checkbox" value="C" />
+              Cannonball Adderley
             </label>
             <label>
-              <input type="checkbox" />
-              Kent
+              <input type="checkbox" value="T" />
+              Trane
             </label>
             <label>
-              <input type="checkbox" />
-              Birger
+              <input type="checkbox" value="G" />
+              George Coleman
             </label>
           </div>
         </div>
 
         <h3>Checkboxes, row</h3>
+        <p class="ctg-note ctg-note--info">
+          The below layout uses the utility class
+          <code>ctg-form-controls--row</code>
+        </p>
         <div>
-          Select accepted apa names
-          <div class="form-controls--row">
+          Select the saxophonists you've listened to:
+          <div class="ctg-form-controls--row">
             <label>
-              <input type="checkbox" />
-              Ola
+              <input type="checkbox" value="C" />
+              Cannonball Adderley
             </label>
             <label>
-              <input type="checkbox" />
-              Kent
+              <input type="checkbox" value="T" />
+              Trane
             </label>
             <label>
-              <input type="checkbox" />
-              Birger
+              <input type="checkbox" value="G" />
+              George Coleman
             </label>
           </div>
         </div>
 
         <h3>Radio buttons, column</h3>
+        <p class="ctg-note ctg-note--info">
+          The below layout uses the utility class
+          <code>ctg-form-controls--col</code>
+        </p>
         <div>
-          Select preferred apa name
-          <div class="form-controls--col">
+          Select favorite saxophonist:
+          <div class="ctg-form-controls--col">
             <label>
-              <input type="radio" name="apa" value="Ola" />
-              Ola
+              <input type="radio" name="saxophonist" value="C" />
+              Cannonball Adderley
             </label>
             <label>
-              <input type="radio" name="apa" value="Sven" />
-              Sven
+              <input type="radio" name="saxophonist" value="T" />
+              Trane
             </label>
             <label>
-              <input type="radio" name="apa" value="Bodil" />
-              Bodil
+              <input type="radio" name="saxophonist" value="G" />
+              George Coleman
             </label>
           </div>
         </div>
 
         <h3>Radio buttons, row</h3>
+        <p class="ctg-note ctg-note--info">
+          The below layout uses the utility class
+          <code>ctg-form-controls--row</code>
+        </p>
         <div>
-          Select preferred apa name
-          <div class="form-controls--row">
+          Select favorite saxophonist:
+          <div class="ctg-form-controls--row">
             <label>
-              <input type="radio" name="apa-row" value="Ola" />
-              Ola
+              <input type="radio" name="saxophonist-row" value="C" />
+              Cannonball Adderley
             </label>
             <label>
-              <input type="radio" name="apa-row" value="Sven" />
-              Sven
+              <input type="radio" name="saxophonist-row" value="T" />
+              Trane
             </label>
             <label>
-              <input type="radio" name="apa-row" value="Bodil" />
-              Bodil
+              <input type="radio" name="saxophonist-row" value="G" />
+              George Coleman
             </label>
           </div>
         </div>
 
         <label>
-          Välj
+          Select saxophonist for your birthday party:
           <select>
-            <option value="SE">Sverige</option>
-            <option value="NO">Norge</option>
-            <option value="DK">Danmark</option>
+            <option value="C">Cannonball Adderley</option>
+            <option value="T">Trane</option>
+            <option value="G">George Coleman</option>
           </select>
         </label>
 
@@ -154,8 +170,8 @@
           <textarea cols="30" rows="10"></textarea>
         </label>
 
-        <button type="button">Hämta data</button>
-        <input type="submit" value="Skicka" />
+        <button type="button">Fetch data</button>
+        <input type="submit" value="Send" />
       </form>
 
       <p>
@@ -167,8 +183,10 @@
       <h2>Buttons</h2>
 
       <button type="button">General button</button>
-      <button type="button" class="general-yes">"Positive button", CTA</button>
-      <button type="button" class="general-no">
+      <button type="button" class="ctg-general-yes">
+        "Positive button", CTA
+      </button>
+      <button type="button" class="ctg-general-no">
         "Negative button", critical action
       </button>
 

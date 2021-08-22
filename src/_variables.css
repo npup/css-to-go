@@ -32,6 +32,9 @@
   --color-general--no: var(--color-RED);
   --color-general--warn: var(--color-ORANGE);
 
+  --color-note: var(--color-text-main);
+  --bgcolor-note: var(--color-row--hover);
+
   /** fonts */
   --font-main: Lato, Avenir, Sans serif;
   --font-formatted-numerical: Courier, Monospace, Sans serif;
@@ -92,7 +95,7 @@
   --max-width--copy: 50em;
 }
 
-.theme--light {
+.ctg-theme--light {
   --color-background-main: var(--color-WHITE2);
   --color-text-main: var(--color-BLACK);
   --color-link: var(--color-BLACK);
@@ -102,6 +105,9 @@
   --color-row--hover: var(--color-GRAY);
 
   --color-headings: var(--color-DARK_BLUE);
+
+  --color-note: var(--color-text-main);
+  --bgcolor-note: var(--color-row--hover);
 
   --button-boxshadow--on: var(--button-boxshadow-shape) var(--color-BLACK);
 }
