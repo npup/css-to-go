@@ -34,20 +34,25 @@
   color: var(--color-WHITE2);
 }
 
-.ctg-note {
+@define-placeholder note {
   color: var(--color-note);
   border-left: 0.5rem solid var(--color-LIGHT_BLUE);
   padding: 0.2rem 0 0.2rem 0.5rem;
   background-color: var(--bgcolor-note);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
-
+.ctg-note {
+  @extend note;
+}
 .ctg-note--info {
+  @extend note;
   border-left-color: var(--color-LIGHT_GREEN);
 }
 .ctg-note--warn {
+  @extend note;
   border-left-color: var(--color-general--warn);
 }
 .ctg-note--error {
+  @extend note;
   border-left-color: var(--color-general--no);
 }
