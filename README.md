@@ -45,4 +45,4 @@ or just link to it inside node_modules.
 
     npm start
 
-Navigate to http://localhost:3000/
+Navigate to http://localhost:3003/
