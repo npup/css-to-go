@@ -17,13 +17,20 @@ const otherTheme = "dark" === theme ? "light" : "dark";
     </li>
 </ul>
 
+<p>
+    There is <a href="#elements">element styling</a>, and there are a small number
+    of <a href="#utility-classes">utility classes</a>.  Read more below.
+</p>
+
 <h2>Elements</h2>
 
-<p>The elements that receive some special treatment are:</p>
+<p>The elements that receive some special treatment are:<br> 
 
 <a href="#headings">Headings</a>, <a href="#paragraphs">Paragraphs</a>,
 <a href="#hyperlinks">Hyperlinks</a>, <a href="#lists">Lists</a>,
 <a href="#form-controls">Form controls</a>, and <a href="#buttons">Buttons</a>.
+
+</p>
 
 <h3 id="headings">Headings</h3>
 <p>Headings of level 1 - 4 are supported.</p>
@@ -175,4 +182,148 @@ const otherTheme = "dark" === theme ? "light" : "dark";
   <button type="submit">A "submit" button</button><br />
   <input type="submit" value="An input of type 'submit' button" />
 </Example>
+
+
+<h2 id="utility-classes">Utility classes</h2>
+
+<p>
+    There are utility classes for <a href="#utilities-layout">layout</a>,
+    <a href="#utilities-signal">signalling stuff</a> and for <a href="#utilities-formatting">formatting</a>.
+</p>
+
+<h3 id="utilities-layout">Layout helpers</h3>
+
+<div class="ctg-container">
+    <code>.ctg-root</code>
+    <p>
+       The class that triggers all the other styles. Wrap your document (or
+       section of it) with this class.  I usually give it to the <code>&lt;body></code>. 
+    </p>
+</div>
+
+<div class="ctg-container">
+    <code>.ctg-container</code>
+    <p>
+        Gives a container a max-width, horizontal centering and some nice padding.
+        Being mildly responsive, the padding is different for large and small screens,
+        should work fine.  I usually put this on <code>&lt;body></code> together with
+        the styles "trigger", the <code>.ctg-root</code> class.
+    </p>
+</div>
+
+
+<div class="ctg-container">
+    <code>.ctg-form-controls--row</code>
+    <p>
+        Wrapper to make a bunch of direct <code>&lt;label></code> children display horizontally
+        instead of column-wise. Example:
+    </p>
+
+    <Example>
+        <div class="ctg-form-controls--row">
+            <label>
+                <input type="radio" name="beverage" value="coffee" />
+                Coffee
+            </label>
+            <label>
+                <input type="radio" name="beverage" value="tea" />
+                Tea
+            </label>
+        </div>
+    </Example>
+</div>
+
+<div class="ctg-container">
+    <code>.ctg-form-controls--col</code>
+    <p>
+        Wrapper to explicitly make a bunch of direct <code>&lt;label></code> children display vertically
+        instead of column-wise. Example:
+    </p>
+
+    <Example>
+        <div class="ctg-form-controls--col">
+            <label>
+                <input type="checkbox" name="beverage" value="coffee" />
+                Coffee
+            </label>
+            <label>
+                <input type="checkbox" name="beverage" value="tea" />
+                Tea
+            </label>
+        </div>
+    </Example>
+</div>
+
+<h3 id="utilities-signal">UI signalling</h3>
+
+<h4>Notes</h4>
+
+<p>
+    Helps making small pieces of text stand out, for a user to take notice.
+    There are four different flavors of notes &mdash; see below:
+</p>
+
+<div class="ctg-container">
+    <Example>
+        <code>.ctg-note</code> - plain note
+        <div class="ctg-note">
+            Read more in the full user agreement text
+        </div><br>
+
+        <code>.ctg-note--info</code> - information
+        <div class="ctg-note--info">
+            You are now subscribed to the service!
+        </div><br>
+
+        <code>.ctg-note--warn</code> - warning
+        <div class="ctg-note--warn">
+            Running low on Pokèballs!
+        </div><br>
+
+        <code>.ctg-note--error</code> - error
+        <div class="ctg-note--error">
+            Timed out!
+        </div>
+    </Example>
+</div>
+
+<h4>Positive/negative</h4>
+<p>
+    Adds "positive" or "negative" styling to a container.<br>
+    Below they are applied to buttons, but they work on any element with content.
+</p>
+
+<div class="ctg-container">
+    <Example>
+        <button type="button">Plain button for reference</button><br><br>
+
+        <code>.ctg-general-yes</code> (positive)<br>
+        <button class="ctg-general-yes" type="button">Yes, subscribe!</button><br><br>
+
+        <code>.ctg-general-no</code> (negative)<br>
+        <button class="ctg-general-no" type="button">Delete item</button>
+    </Example>
+</div>
+
+
+<h4 id="utilities-formatting">Formatting</h4>
+
+<p>
+    These just apply a monospace font to a block of text.
+    Look at <code>.ctg-formatted-numerical</code> and <code>.ctg-formatted-date</code>,
+    respectively:
+</p>
+
+<div class="ctg-container">
+    <Example>
+        <p>
+            The grand total is <span class="ctg-formatted-numerical">$100</span>.
+        </p>
+        <p>
+            Today's date is <span class="ctg-formatted-date">2021-06-15</span>.
+        </p>
+    </Example>
+</div>
+
+
 <p>Have fun.</p>

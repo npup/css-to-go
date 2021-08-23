@@ -4,13 +4,19 @@ layout: ../layouts/main
 
 # CSS To Go
 
-(This is the overview page. Also look at the examples of [the standard theme](/theme-dark/) and [the light theme](/theme-light/)).
+<b>Whoa! This looks quite _unstyled_... But read on!</b>
+
+(This is the overview page. Also look at the examples of [the standard theme](/theme-dark) and [the light theme](/theme-light)).
 
 Sometimes, I write a bit of plain HTML and then start giving it some minimal
 styling. Recently, I've been thinking more and more like this:
 
-> If only there was a small `CSS` file that I could drop into the
+> If only there was a small<sup>*</sup> `CSS` file that I could drop into the
 > project just to get it over with instead!
+>
+> <div style="margin-top: 1em; text-align: right;"><sup>*) For some value of "small"</sup></div>
+
+
 
 &mdash; so I created [CSS To Go](https://github.com/npup/css-to-go).
 

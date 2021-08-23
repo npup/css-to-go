@@ -33,7 +33,13 @@ or just link to it inside node_modules.
       />
     </head>
 
+Then apply the "root selector" class `ctg-root` to trigger the styles (and possibly the utility class `ctg-container` too).  I normally make the document's body be that root:
 
+`index.html` (excerpt):
+
+    <body class="ctg-root ctg-container">
+        <!-- your HTML here -->
+    </body>
 ## View examples
 
     npm start
