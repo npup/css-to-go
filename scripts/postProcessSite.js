@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const basePath = "/test";
+const basePath = "/css-to-go";
 
 function updateHref(fileName) {
   const html = fs.readFileSync(fileName, "utf8");
