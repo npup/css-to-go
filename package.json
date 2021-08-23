@@ -28,8 +28,18 @@
   },
   "scripts": {
     "start": "astro dev",
-    "build": "cp example/_astro/*.css dist/css-to-go.min.css && npx prettier example/_astro/*.css > dist/css-to-go.css",
-    "build:example": "astro build",
-    "prebuild": "npm run build:example && rm -rf dist && mkdir dist"
+    "_build": "cp example/_astro/*.css dist/css-to-go.min.css && npx prettier example/_astro/*.css > dist/css-to-go.css",
+    "_build:example": "astro build",
+    "_prebuild": "npm run build:example && rm -rf dist && mkdir dist",
+    "---": "---",
+    "----": "--",
+    "-----": "-",
+    "prebuild": "npm run clean",
+    "build": "astro build && cp -R docs-local docs",
+    "postbuild": "npm run copy:dist && npm run process:docs && npm run touch-nojekyll && echo '----- Done'",
+    "copy:dist": "cp docs-local/_astro/*.css dist/css-to-go.min.css && npx prettier docs-local/_astro/*.css > dist/css-to-go.css",
+    "process:docs": "node scripts/postProcessSite.js",
+    "touch-nojekyll": "touch docs/.nojekyll",
+    "clean": "rm -rf docs docs-local dist && mkdir dist"
   }
 }
