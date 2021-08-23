@@ -10,3 +10,4 @@ function updateHref(fileName) {
 }
 
 updateHref("./docs/index.html");
+updateHref("./docs/light-mode/index.html");
