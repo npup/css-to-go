@@ -3,12 +3,12 @@ import Layout from "../layouts/main.astro";
 import Example from "../components/Example.astro";
 import Explanation from "../components/Explanation.astro";
 import Content from "../components/Content.astro";
+
+const theme = "dark";
 ---
 
-<Layout useCTG="dark">
-  <h1>Examples</h1>
+<Layout useCTG={ true } theme={ theme }>
 
-  (<a href="/light-mode">See light mode</a>)
+  <Content theme={ theme } />
 
-  <Content />
 </Layout>

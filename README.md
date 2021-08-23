@@ -2,16 +2,9 @@
 
 A bit of CSS that makes a plain HTML document somewhat more pleasant to look at.
 
-It makes a _gentle_ reset, and then tends to
+It makes a _gentle_ reset, and then applies some global styles for common elements.  There are also a small number of utility classes made available.
 
-- Page background color (light or dark)
-- Font-family
-- Headings, sizes 1-4 (avoid 5+ please)
-- Copy-text readability (paragraphs)
-- Ordered and unordered lists (items)
-- Form controls (textinputs, checkboxes, radio buttons, selects, submit- and regular buttons)
-
-There are also a small number of utility classes.  Read more below (_coming_).
+Learn more by looking at the [description overview](https://npup.github.io/css-to-go/) and the [examples](https://npup.github.io/css-to-go/examples/).
 
 ## Installation
 

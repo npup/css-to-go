@@ -1,8 +1,21 @@
 ---
 import Example from "./Example.astro";
+const { theme } = Astro.props;
+const otherTheme = "dark" === theme ? "light" : "dark";
 ---
 
+<h1>Example, {theme} mode</h1>
+
 <p>This page showcases some examples of the styles applied.</p>
+
+<ul>
+    <li>
+        <a href={`/theme-${ otherTheme }`}>See {otherTheme} mode</a>
+    </li>
+    <li>
+        Go to <a href="/">overview</a>.
+    </li>
+</ul>
 
 <h2>Elements</h2>
 

@@ -4,13 +4,32 @@ layout: ../layouts/main
 
 # CSS To Go
 
+(This is the overview page. Also look at the examples of [the standard theme](/theme-dark/) and [the light theme](/theme-light/)).
+
 Sometimes, I write a bit of plain HTML and then start giving it some minimal
 styling. Recently, I've been thinking more and more like this:
 
 > If only there was a small `CSS` file that I could drop into the
 > project just to get it over with instead!
 
-&mdash; so I created [CSS To Go](https://npup.github.io/css-to-go).
+&mdash; so I created [CSS To Go](https://github.com/npup/css-to-go).
+
+## What does it look like?
+
+<div class=".ctg-form-controls--col">
+
+<label>
+    <input type="checkbox" onclick="document.body.classList.toggle('ctg-root')">
+    Check this box to see what <em>CSS To Go</em> looks like
+</label>
+
+<label>
+    <input type="checkbox" onclick="document.body.classList.toggle('ctg-theme--light')">
+    Toggle theme (standard vs. light mode)
+</label>
+
+</div>
+
 
 ## What it does
 
@@ -38,21 +57,6 @@ To enable any of these styles, wrap your content with the class `.ctg-root` (put
     </body>
     </html>
 
-### What does it look like?
-
-<div class=".ctg-form-controls--col">
-
-<label>
-    <input type="checkbox" onclick="document.body.classList.toggle('ctg-root')">
-    Check this box to see what <em>CSS To Go</em> looks like
-</label>
-
-<label>
-    <input type="checkbox" onclick="document.body.classList.toggle('ctg-theme--light')">
-    Toggle "light mode"
-</label>
-
-</div>
 
 ### Element styling
 
@@ -64,7 +68,7 @@ all need be applied there. These elements get some help:
 - Lists (ordered and unordered)
 - Hyperlinks (they look like [this](https://example.com/).)
 - Form controls with labels
-- _\<em>_ and _\<blockquote>_ elements
+- `\<em>` and `\<blockquote>` elements
 
 Most of these can be seen on this very page.
 

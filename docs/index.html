@@ -1,48 +1,29 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CSS To Go - Example pages</title><link rel="stylesheet" href="/css-to-go/_astro/common-Z2sfGTq.css" type="text/css"></head><body class="ctg-container ctg-theme--dark"><h1>Examples</h1>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CSS To Go - Example pages</title><link rel="stylesheet" href="/css-to-go/_astro/common-Z2sfGTq.css" type="text/css"></head><body class=" ctg-container ctg-theme--dark"><h1 id="css-to-go">CSS To Go</h1><p>(This is the overview page. Also look at the examples of <a href="/css-to-go/theme-dark/">the standard theme</a> and <a href="/css-to-go/theme-light/">the light theme</a>).</p><p>Sometimes, I write a bit of plain HTML and then start giving it some minimal
+styling. Recently, I’ve been thinking more and more like this:</p><blockquote><p>If only there was a small <code>CSS</code> file that I could drop into the
+project just to get it over with instead!</p></blockquote><p>— so I created <a href="https://github.com/npup/css-to-go">CSS To Go</a>.</p><h2 id="what-does-it-look-like">What does it look like?</h2><div class=".ctg-form-controls--col"><label><input type="checkbox" onclick="document.body.classList.toggle('ctg-root')">
+    Check this box to see what <em>CSS To Go</em> looks like
+</label><label><input type="checkbox" onclick="document.body.classList.toggle('ctg-theme--light')">
+    Toggle theme (standard vs. light mode)
+</label></div><h2 id="what-it-does">What it does</h2><p>Basically, it is this:</p><ol><li>Some element styling</li><li>A small number of utility classes</li></ol><p>It is a quite small set of global <code>CSS</code> that are easy to apply to most any site.</p><h3 id="how-to-use-it">How to use it</h3><p>To enable any of these styles, wrap your content with the class <code>.ctg-root</code> (putting it all the way up on the <code>&lt;body&gt;</code> tag works just fine).</p><pre class=""><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/path/to/css-to-go.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ctg-root<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 
-  (<a href="/css-to-go/light-mode">See light mode</a>)
+    ... your content
 
-  <p>This page showcases some examples of the styles applied.</p><h2>Elements</h2><p>The elements that receive some special treatment are:</p><a href="#headings">Headings</a>, <a href="#paragraphs">Paragraphs</a>,
-<a href="#hyperlinks">Hyperlinks</a>, <a href="#lists">Lists</a>,
-<a href="#form-controls">Form controls</a>, and <a href="#buttons">Buttons</a>.
-
-<h3 id="headings">Headings</h3><p>Headings of level 1 - 4 are supported.</p><article class="example astro-wcVTeG5l"><h1>This is a h1</h1><h2>This is a h2</h2><h3>This is a h3</h3><h4>This is a h4</h4></article><h3>Paragraphs</h3><p>
-  Paragraphs have some styles of their own to enchance readability. It is mostly
-  a question of
-</p><ul><li>Line height</li><li>Max-width</li></ul><article class="example astro-wcVTeG5l"><p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam iusto
-    dignissimos obcaecati quo libero in quaerat nesciunt doloribus commodi,
-    dolorem maxime, animi earum ipsa vero dicta alias accusantium
-    necessitatibus! Odit.
-  </p><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sed nostrum
-    fugit! Odio, ullam et. Velit ex nam voluptatibus dolorum cupiditate vero
-    assumenda architecto voluptas ad explicabo, qui odio magni. Lorem ipsum
-    dolor sit amet consectetur, adipisicing elit. Tempore voluptate expedita
-    quia saepe exercitationem voluptatibus soluta ducimus consectetur minima,
-    minus, aliquid nisi veniam in tenetur alias dignissimos id debitis aut.
-  </p></article><h3 id="hyperlinks">Hyperlinks</h3><p>Links have some text-decoration and colors for hover/focus.</p><article class="example astro-wcVTeG5l"><p>
-    Behold - a link to <a href="http://example.com">an example page</a>. And
-    another one, to <a href="http://example.com">the same page</a>.
-  </p></article><h3 id="lists">Lists</h3><p>
-  Ordered and unordered lists are supported. In short, they are treated like
-  this:
-</p><ul><li>The list items keep any left-margin they may have</li><li>There is a hover style applied to the items</li><li>Ordered list items retain their list-style-type</li></ul><h4>Ordered list</h4><article class="example astro-wcVTeG5l"><ol><li>One potato</li><li>Two potatoes</li><li>Three potatoes</li><li>Four</li></ol></article><h4>Unordered list</h4><article class="example astro-wcVTeG5l"><ul><li>John</li><li>Paul</li><li>George</li><li>Ringo</li></ul></article><h3 id="form-controls">Form controls</h3><p>Some common form control elements are supported:</p><ul><li>Text input</li><li>Text field</li><li>Radio button</li><li>Select</li><li>Checkbox</li><li>Submit- and "button" button</li></ul><article class="example astro-wcVTeG5l"><label>
-    Name
-    <input type="text" placeholder="Full name"></label><label>
-    Some words about me
-    <textarea rows="3" cols="30"></textarea></label><div class="ctg-form-controls--row"><label><input type="radio" name="beverage" value="coffee">
-      Coffee
-    </label><label><input type="radio" name="beverage" value="tea">
-      Tea
-    </label><label><input type="radio" name="beverage" value="other">
-      Other
-    </label></div><label>
-    Favorite coutry
-    <select><option value="SE">Sweden</option><option value="NO">Norway</option><option value="DK">Denmark</option></select></label><label><input type="checkbox" name="ok">
-    I understand
-  </label><input type="submit" value="Submit"></article><h3 id="buttons">Buttons</h3><p>
-  Buttons of type <em>button</em> or <em>submit</em> and inputs of type
-  <em>submit</em> are styled to stand out some, and also have some hover-focus
-  indication to them.
-</p><article class="example astro-wcVTeG5l"><button type="button">A "button" button</button><br><button type="submit">A "submit" button</button><br><input type="submit" value="An input of type 'submit' button"></article><p>Have fun.</p></body></html>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre><h3 id="element-styling">Element styling</h3><p>Most of its business is applying <code>CSS</code> to <em>tag names</em>, so no classes at
+all need be applied there. These elements get some help:</p><ul><li>Headings (levels 1-4)</li><li>Paragraphs</li><li>Lists (ordered and unordered)</li><li>Hyperlinks (they look like <a href="https://example.com/">this</a>.)</li><li>Form controls with labels</li><li><code>\&lt;em&gt;</code> and <code>\&lt;blockquote&gt;</code> elements</li></ul><p>Most of these can be seen on this very page.</p><h3 id="utility-classes">Utility classes</h3><p>There are also a small number of utility classes:</p><ul><li><code>.ctg-form-controls--row</code> and <code>.ctg-form-controls--col</code> — for layout of form controls</li><li><code>.ctg-note</code> — a “notification” type visual</li><li><code>.ctg-general-yes</code> and <code>.ctg-general-no</code> — to signal “positive” and “negative” signals, respectively</li><li><code>.ctg-formatted-date</code> — to format dates: <span class="ctg-formatted-date">2021-06-15</span></li><li><code>.ctg-formatted-numerical</code> — to format numbers in general: <span class="ctg-formatted-numerical">125 56</span></li><li><code>.ctg-container</code> — to be used as a top level container</li></ul><p>(Granted, those two last formatters are merely applying some monospace to the font.)</p><h3 id="utility-examples">Utility examples</h3><h4 id="notes">Notes</h4><p>The available types of “notes” are:</p><p><em>Plain note</em>: <code>.ctg-note</code></p><div class="ctg-note">
+    Please read this
+</div><p><em>Info note</em>: <code>.ctg-note--info</code></p><div class="ctg-note--info">
+    You have more data available
+</div><p><em>Warning note</em>: <code>.ctg-note--warn</code></p><div class="ctg-note--warn">
+    Look out ahead!
+</div><p><em>Error note</em>: <code>.ctg-note--error</code></p><div class="ctg-note--error">
+    Stop doing that!
+</div><h4 id="signals">Signals</h4><p>These just apply the positive and negative color/background pairs, no frills.
+Here they are given to the <code>CSS To Go</code>-styled buttons:</p><p><code>.ctg-general-no</code><br><button type="button" class="ctg-general-no">Delete</button></p><p><code>.ctg-general-yes</code><br><button type="button" class="ctg-general-yes">Submit</button></p><p>A plain button, for comparison<br><button type="button">Ok</button></p></body></html>

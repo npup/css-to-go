@@ -1,5 +1,5 @@
 ---
-const { useCTG = "dark" } = Astro.props;
+const { useCTG = false, theme = "dark" } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@ const { useCTG = "dark" } = Astro.props;
     <title>CSS To Go - Example pages</title>
     <link rel="stylesheet" href="/main.css">
   </head>
-  <body class={`ctg-container ctg-theme--${useCTG}`}>
+  <body class={`${ useCTG ? "ctg-root" : "" } ctg-container ctg-theme--${theme}`}>
 
         <slot />
 
