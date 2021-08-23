@@ -1,6 +1,6 @@
 {
   "name": "css-to-go",
-  "version": "0.9.11",
+  "version": "0.9.12",
   "license": "ISC",
   "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
   "author": "P.Envall <petter.envall@gmail.com>",
@@ -20,25 +20,23 @@
   "main": "dist/css-to-go.min.css",
   "files": [
     "dist/*.css",
-    "src/*.css"
+    "public/*.scss"
   ],
   "devDependencies": {
     "astro": "0.19.1",
+    "filehound": "^1.17.4",
     "prettier": "^2.3.2"
+  },
+  "config": {
+    "basePath": "/css-to-go"
   },
   "scripts": {
     "start": "astro dev",
-    "_build": "cp example/_astro/*.css dist/css-to-go.min.css && npx prettier example/_astro/*.css > dist/css-to-go.css",
-    "_build:example": "astro build",
-    "_prebuild": "npm run build:example && rm -rf dist && mkdir dist",
-    "---": "---",
-    "----": "--",
-    "-----": "-",
-    "prebuild": "npm run clean",
     "build": "astro build && cp -R docs-local docs",
+    "prebuild": "npm run clean",
     "postbuild": "npm run copy:dist && npm run process:docs && npm run touch-nojekyll && echo '----- Done'",
     "copy:dist": "cp docs-local/_astro/*.css dist/css-to-go.min.css && npx prettier docs-local/_astro/*.css > dist/css-to-go.css",
-    "process:docs": "node scripts/postProcessSite.js",
+    "process:docs": "node scripts/updateBasePath.js $npm_package_config_basePath",
     "touch-nojekyll": "touch docs/.nojekyll",
     "clean": "rm -rf docs docs-local dist && mkdir dist"
   }
