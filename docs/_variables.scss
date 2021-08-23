@@ -36,6 +36,10 @@
   --color-list-marker: var(--color-LIGHT_BLUE);
 
   --color-em: var(--color-LIGHT_BLUE);
+  --color-code: var(--color-ORANGE);
+
+  --bgcolor-blockquote: var(--color-DARK_BLUE);
+  --bordercolor-blockquote: var(--color-GRAY_LIGHT);
 
   --color-note: var(--color-text-main);
   --bgcolor-note: var(--color-row--hover);
@@ -78,7 +82,7 @@
   --padding--select: 0.2rem;
 
   --margin-button: 0.1rem 0.2rem;
-  --padding-button: 0.4rem 0.6rem;
+  --padding-button: 0.4rem 0.8rem;
 
   --padding-container: 0.5rem 1rem;
 
@@ -109,6 +113,9 @@
   --color-link--active: var(--color-BLUE);
 
   --color-em: var(--color-BLACK);
+  --color-code: var(--color-DARK_BLUE);
+  --bgcolor-blockquote: var(--color-GRAY);
+  --bordercolor-blockquote: var(--color-DARK_BLUE);
   --color-list-marker: var(--color-DARK_BLUE);
 
   --color-row--hover: var(--color-GRAY_LIGHT);

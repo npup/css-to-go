@@ -1,15 +1,17 @@
-.ctg-root a,
-.ctg-root a:link,
-.ctg-root a:visited,
-.ctg-root a:hover,
-.ctg-root a:active {
-  color: var(--color-link);
-  transition: var(--transition--color);
-  text-underline-position: under;
-  text-decoration-color: var(--color-link--hover);
-}
+.ctg-root {
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: var(--color-link);
+    transition: var(--transition--color);
+    text-underline-position: under;
+    text-decoration-color: var(--color-link--hover);
+  }
 
-.ctg-root a:hover,
-.ctg-root a:focus {
-  color: var(--color-link--hover);
+  a:hover,
+  a:focus {
+    color: var(--color-link--hover);
+  }
 }

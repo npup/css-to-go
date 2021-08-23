@@ -1,15 +1,34 @@
-.ctg-root h1,
-.ctg-root h2,
-.ctg-root h3,
-.ctg-root h4 {
-  color: var(--color-headings);
-}
+.ctg-root {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-headings);
+  }
 
-.ctg-root p {
-  line-height: var(--line-height-copy);
-  max-width: var(--max-width--copy);
-}
+  p {
+    line-height: var(--line-height-copy);
+    max-width: var(--max-width--copy);
+  }
 
-.ctg-root em {
-  color: var(--color-em);
+  em {
+    color: var(--color-em);
+  }
+
+  code {
+    color: var(--color-code);
+  }
+
+  blockquote {
+    p {
+      margin: 0;
+    }
+    font-style: italic;
+    max-width: 30em;
+    border-left: 4px solid var(--bordercolor-blockquote);
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: var(--bgcolor-blockquote);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
 }

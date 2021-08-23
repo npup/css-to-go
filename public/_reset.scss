@@ -1,31 +1,25 @@
 .ctg-root,
-.ctg-root *,
-html,
-html * {
+.ctg-root * {
   box-sizing: border-box;
 }
 
-body.ctg-root,
-body {
+.ctg-root {
   margin: 0;
-}
 
-.ctg-root h1,
-.ctg-root h2,
-.ctg-root h3,
-.ctg-root h4 {
-  margin: var(--margin--headings);
-}
-.ctg-root h2 {
-  font-size: 1.3em;
-}
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: var(--margin--headings);
+  }
+  h2 {
+    font-size: 1.3em;
+  }
 
-.ctg-root ul,
-.ctg-root ol {
-  smargin-top: 0;
-  padding: 0;
-}
-.ctg-root ul,
-.ctg-root ol {
-  list-style-position: inside;
+  ul,
+  ol {
+    margin-top: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
 }
