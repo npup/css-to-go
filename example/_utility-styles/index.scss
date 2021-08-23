@@ -1,4 +1,4 @@
-@import url("_styles.css");
+@import "./_styles.scss";
 
 /** container */
 .ctg-root.ctg-container,
@@ -35,25 +35,22 @@
   color: var(--color-WHITE2);
 }
 
-@define-placeholder note {
+.ctg-root .ctg-note {
   color: var(--color-note);
   border-left: 0.5rem solid var(--color-LIGHT_BLUE);
   padding: 0.2rem 0 0.2rem 0.5rem;
   background-color: var(--bgcolor-note);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
-.ctg-root .ctg-note {
-  @extend note;
-}
 .ctg-root .ctg-note--info {
-  @extend note;
+  @extend .ctg-note;
   border-left-color: var(--color-LIGHT_GREEN);
 }
 .ctg-root .ctg-note--warn {
-  @extend note;
+  @extend .ctg-note;
   border-left-color: var(--color-general--warn);
 }
 .ctg-root .ctg-note--error {
-  @extend note;
+  @extend .ctg-note;
   border-left-color: var(--color-general--no);
 }

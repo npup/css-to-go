@@ -1,0 +1,15 @@
+@import "./_variables.scss";
+@import "./_reset.scss";
+@import "./_basic-elements.scss";
+
+@import "./_links.scss";
+@import "./_lists.scss";
+@import "./_forms.scss";
+
+@import "./_utility-styles/index.scss";
+
+.ctg-root {
+  font-family: var(--font-main);
+  background-color: var(--color-background-main);
+  color: var(--color-text-main);
+}

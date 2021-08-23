@@ -1,0 +1,12 @@
+.ctg-root li {
+  margin: var(--margin-list-item);
+  padding: var(--padding-list-item);
+  border-radius: var(--border-radius);
+  transition: var(--transition--bgcolor);
+}
+.ctg-root li:hover {
+  background-color: var(--color-row--hover);
+}
+.ctg-root li::marker {
+  color: var(--color-list-marker);
+}

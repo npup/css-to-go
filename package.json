@@ -1,14 +1,14 @@
 {
   "name": "css-to-go",
-  "version": "0.9.10",
-  "author": "P.Envall <petter.envall@gmail.com>",
+  "version": "0.9.11",
   "license": "ISC",
+  "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
+  "author": "P.Envall <petter.envall@gmail.com>",
+  "homepage": "https://github.com/npup/css-to-go#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/npup/css-to-go"
   },
-  "homepage": "https://github.com/npup/css-to-go#readme",
-  "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
   "keywords": [
     "css",
     "to go",
@@ -23,21 +23,13 @@
     "src/*.css"
   ],
   "devDependencies": {
-    "@snowpack/plugin-postcss": "^1.4.3",
-    "astro": "^0.19.1",
-    "cssnano": "^5.0.8",
-    "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.2",
-    "postcss-simple-extend": "^1.0.0",
-    "snowpack": "^3.8.6"
+    "astro": "0.19.1",
+    "prettier": "^2.3.2"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "prebuild": "rm -rf dist && mkdir dist",
-    "build": "npm run build-css:max && npm run build-css:min",
-    "build-css": "npx postcss src/main.css",
-    "build-css:min": "CSS_MINIFY=true npm run build-css -- -o dist/css-to-go.min.css",
-    "build-css:max": "npm run build-css -- -o dist/css-to-go.css",
-    "start": "astro dev"
+    "start": "astro dev",
+    "build": "cp example/_astro/*.css dist/css-to-go.min.css && npx prettier example/_astro/*.css > dist/css-to-go.css",
+    "build:example": "astro build",
+    "prebuild": "npm run build:example && rm -rf dist && mkdir dist"
   }
 }

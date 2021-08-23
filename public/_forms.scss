@@ -1,0 +1,58 @@
+.ctg-root label {
+  display: block;
+  margin: var(--margin-label);
+  padding: var(--padding-label);
+}
+
+.ctg-root label > input[type="text"] {
+  display: block;
+  margin-top: var(--margintop--input-text);
+  padding: var(--input-text-padding);
+}
+
+.ctg-root label > textarea {
+  display: block;
+  margin-top: var(--margintop--textarea);
+  padding: var(--textarea-padding);
+  border-radius: var(--border-radius);
+}
+
+.ctg-root label > input[type="checkbox"] {
+  margin-right: var(--marginright--checkbox);
+  transform: var(--transform--checkbox);
+}
+
+.ctg-root label > input[type="radio"] {
+  margin-right: var(--marginright--radio);
+  transform: var(--transform--radio);
+}
+
+.ctg-root label > select {
+  display: block;
+  margin-top: var(--margintop--select);
+  padding: var(--padding--select);
+  border-radius: var(--border-radius);
+}
+
+.ctg-root input[type="submit"],
+.ctg-root button[type="button"],
+.ctg-root button[type="submit"] {
+  border: 0;
+  margin: var(--margin-button);
+  padding: var(--padding-button);
+  background-color: var(--color-BLUE);
+  color: var(--color-WHITE2);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--button-boxshadow--off);
+  transition: var(--button-boxshadow-transition);
+}
+
+.ctg-root input[type="submit"]:hover,
+.ctg-root input[type="submit"]:focus,
+.ctg-root button[type="button"]:hover,
+.ctg-root button[type="button"]:focus,
+.ctg-root button[type="submit"]:hover,
+.ctg-root button[type="submit"]:focus {
+  box-shadow: var(--button-boxshadow--on);
+}

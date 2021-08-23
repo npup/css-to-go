@@ -1,0 +1,15 @@
+.ctg-root h1,
+.ctg-root h2,
+.ctg-root h3,
+.ctg-root h4 {
+  color: var(--color-headings);
+}
+
+.ctg-root p {
+  line-height: var(--line-height-copy);
+  max-width: var(--max-width--copy);
+}
+
+.ctg-root em {
+  color: var(--color-em);
+}
