@@ -1,4 +1,11 @@
+# NOTE
+
+> There are no releases or "stability" yet - things can and will change!
+
+---
+
 # CSS-to-go
+
 
 A bit of CSS that makes a plain HTML document somewhat more pleasant to look at.
 
