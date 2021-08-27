@@ -44,7 +44,11 @@ Then apply the "root selector" class `ctg-root` to trigger the styles (and possi
 
 `index.html` (excerpt):
 
-    <body class="ctg-root ctg-container">
+    <body class="
+        ctg-root         <!-- enables all styling -->
+        ctg-container    <!-- optional (just some container/wrapper behaviour) -->
+        ctg-theme--light <!-- optional (dark theme is the default)  -->
+    ">
         <!-- your HTML here -->
     </body>
 ## View examples
