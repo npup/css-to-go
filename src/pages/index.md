@@ -69,7 +69,7 @@ the appropriate portion of your content.
 ### Element styling
 
 Most of its business is applying `CSS` to <em>tag names</em>, so no classes at
-all need be applied there.  Some this can be seen on this very page, if you switch the theme on.
+all need be applied there.  Some of this can be seen on this very page, if you switch the theme on.
 
 ### Utility classes
 
