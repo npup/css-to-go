@@ -25,13 +25,18 @@
   }
 
   /** signals */
-  .ctg-general-yes.ctg-general-yes {
+  .ctg-signal--yes.ctg-signal--yes {
     background-color: var(--color-general--yes);
     color: var(--color-WHITE2);
   }
 
-  .ctg-general-no.ctg-general-no {
+  .ctg-signal--no.ctg-signal--no {
     background-color: var(--color-general--no);
+    color: var(--color-WHITE2);
+  }
+
+  .ctg-signal--warn.ctg-signal--warn {
+    background-color: var(--color-general--warn);
     color: var(--color-WHITE2);
   }
 

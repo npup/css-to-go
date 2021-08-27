@@ -37,6 +37,8 @@
 
   --color-em: var(--color-LIGHT_BLUE);
   --color-code: var(--color-ORANGE);
+  --color-hr: var(--color-DARK_BLUE);
+  --outlinecolor-form-control--focus: var(--color-BLUE);
 
   --bgcolor-blockquote: var(--color-DARK_BLUE);
   --bordercolor-blockquote: var(--color-GRAY_LIGHT);
@@ -67,9 +69,9 @@
   --textarea-padding: 0.3rem;
 
   --margin-list-item: 0 0 0.2rem 1rem;
-  --padding-list-item: 0.2rem 0.4rem;
+  --padding-list-item: 0.2rem 0.4rem 0.2rem 0.4rem;
 
-  --margin-label: 0.5rem 0 1rem;
+  --margin-label: 0.5rem 0 0.8rem;
   --padding-label: 0 0 0.5rem;
 
   --margintop--input-text: 0.2rem;
@@ -84,7 +86,7 @@
   --margin-button: 0.1rem 0.2rem;
   --padding-button: 0.4rem 0.8rem;
 
-  --padding-container: 0.5rem 1rem;
+  --padding-container: 0.3rem 1rem;
 
   --button-boxshadow-shape: 0px 0px 2px 2px;
   --button-boxshadow--off: var(--button-boxshadow-shape) transparent;
@@ -99,9 +101,10 @@
 
   --paddingbottom--form-controls-col: 1rem;
 
-  --margin--headings: 0.8em 0 0.7em;
+  --margin--headings: 0.8rem 0;
 
-  --max-width--copy: 50em;
+  --max-width--copy: 50rem;
+  --padding-right--copy: 0.5rem;
 }
 
 .ctg-root.ctg-theme--light,
@@ -114,6 +117,8 @@
 
   --color-em: var(--color-BLACK);
   --color-code: var(--color-DARK_BLUE);
+  --outlinecolor-form-control--focus: var(--color-BLUE);
+
   --bgcolor-blockquote: var(--color-GRAY);
   --bordercolor-blockquote: var(--color-DARK_BLUE);
   --color-list-marker: var(--color-DARK_BLUE);
@@ -125,12 +130,12 @@
   --color-note: var(--color-text-main);
   --bgcolor-note: var(--color-row--hover);
 
-  --button-boxshadow--on: var(--button-boxshadow-shape) var(--color-BLACK);
+  --button-boxshadow--on: var(--button-boxshadow-shape) var(--color-BLUE); /*var(--button-boxshadow-shape) var(--color-BLACK);*/
 }
 
 @media screen and (min-width: 481px) {
   .ctg-root {
-    --padding-container: 1rem 2rem;
+    --padding-container: 0.6rem 2rem;
   }
 }
 

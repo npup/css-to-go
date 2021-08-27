@@ -9,6 +9,7 @@
   p {
     line-height: var(--line-height-copy);
     max-width: var(--max-width--copy);
+    padding-right: var(--padding-right--copy);
   }
 
   em {
@@ -30,5 +31,15 @@
     margin-left: 1rem;
     background-color: var(--bgcolor-blockquote);
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+
+  hr {
+    margin: 1.5rem 0;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--color-hr);
+    box-shadow: 0 0px 1px var(--color-hr);
   }
 }

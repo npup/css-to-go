@@ -1,329 +1,45 @@
 ---
-import Example from "./Example.astro";
-const { theme } = Astro.props;
-const otherTheme = "dark" === theme ? "light" : "dark";
+
+import HeadingsExample from "../content/examples/headings/index.astro";
+import ParagraphsExample from "../content/examples/paragraphs/index.astro";
+import HyperLinksExample from "../content/examples/hyperlinks/index.astro";
+import ListsExample from "../content/examples/lists/index.astro";
+import SectioningExample from "../content/examples/sectioning/index.astro";
+import QuotesAndEmphasisExample from "../content/examples/quotes-and-emphasis/index.astro";
+import FormControlsExample from "../content/examples/form-controls/index.astro";
+import UtilityClassesExample from "../content/examples/utility-classes/index.astro";
+
 ---
 
-<h1>Example, {theme} mode</h1>
+<h1 id="top">CSS To Go - examples</h1>
 
-<p>This page showcases some examples of the styles applied.</p>
-
-<ul>
-    <li>
-        <a href={`/theme-${ otherTheme }`}>See {otherTheme} mode</a>
-    </li>
-    <li>
-        Go to <a href="/">overview</a>.
-    </li>
-</ul>
+<div>
+    <slot />
+    &nbsp;Or go back to the <a href="/">overview</a>.
+</div>
 
 <p>
-    There is <a href="#elements">element styling</a>, and there are a small number
-    of <a href="#utility-classes">utility classes</a>.  Read more below.
-</p>
-
-<h2>Elements</h2>
-
-<p>The elements that receive some special treatment are:<br> 
-
-<a href="#headings">Headings</a>, <a href="#paragraphs">Paragraphs</a>,
-<a href="#hyperlinks">Hyperlinks</a>, <a href="#lists">Lists</a>,
-<a href="#form-controls">Form controls</a>, and <a href="#buttons">Buttons</a>.
-
-</p>
-
-<h3 id="headings">Headings</h3>
-<p>Headings of level 1 - 4 are supported.</p>
-
-<Example>
-  <h1>This is a h1</h1>
-  <h2>This is a h2</h2>
-  <h3>This is a h3</h3>
-  <h4>This is a h4</h4>
-</Example>
-
-<h3>Paragraphs</h3>
-
-<p>
-  Paragraphs have some styles of their own to enchance readability. It is mostly
-  a question of
-</p>
-<ul>
-  <li>Line height</li>
-  <li>Max-width</li>
-</ul>
-
-<Example>
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam iusto
-    dignissimos obcaecati quo libero in quaerat nesciunt doloribus commodi,
-    dolorem maxime, animi earum ipsa vero dicta alias accusantium
-    necessitatibus! Odit.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sed nostrum
-    fugit! Odio, ullam et. Velit ex nam voluptatibus dolorum cupiditate vero
-    assumenda architecto voluptas ad explicabo, qui odio magni. Lorem ipsum
-    dolor sit amet consectetur, adipisicing elit. Tempore voluptate expedita
-    quia saepe exercitationem voluptatibus soluta ducimus consectetur minima,
-    minus, aliquid nisi veniam in tenetur alias dignissimos id debitis aut.
-  </p>
-</Example>
-
-<h3 id="hyperlinks">Hyperlinks</h3>
-
-<p>Links have some text-decoration and colors for hover/focus.</p>
-
-<Example>
-  <p>
-    Behold - a link to <a href="http://example.com">an example page</a>. And
-    another one, to <a href="http://example.com">the same page</a>.
-  </p>
-</Example>
-
-<h3 id="lists">Lists</h3>
-
-<p>
-  Ordered and unordered lists are supported. In short, they are treated like
-  this:
+    Below follows examples of the styles and utilities provided by <em><a href="https://github.com/npup/css-to-go">CSS To Go</a></em>.
 </p>
 
 <ul>
-  <li>The list items keep any left-margin they may have</li>
-  <li>There is a hover style applied to the items</li>
-  <li>Ordered list items retain their list-style-type</li>
+    <li><a href="#example-headings">Headings</a></li>
+    <li><a href="#example-paragraphs">Paragraphs</a></li>
+    <li><a href="#example-hyperlinks">Hyperlinks</a></li>
+    <li><a href="#example-lists">Lists</a></li>
+    <li><a href="#example-sectioning">Sectioning</a></li>
+    <li><a href="#example-quotes-and-emphasis">Quotes and emphasis</a></li>
+    <li><a href="#example-form-controls">Form controls</a></li>
+    <li><a href="#example-utility-classes">Utility classes</a></li>
 </ul>
 
-<h4>Ordered list</h4>
+<hr>
 
-<Example>
-  <ol>
-    <li>One potato</li>
-    <li>Two potatoes</li>
-    <li>Three potatoes</li>
-    <li>Four</li>
-  </ol>
-</Example>
-
-<h4>Unordered list</h4>
-
-<Example>
-  <ul>
-    <li>John</li>
-    <li>Paul</li>
-    <li>George</li>
-    <li>Ringo</li>
-  </ul>
-</Example>
-
-<h3 id="form-controls">Form controls</h3>
-<p>Some common form control elements are supported:</p>
-<ul>
-  <li>Text input</li>
-  <li>Text field</li>
-  <li>Radio button</li>
-  <li>Select</li>
-  <li>Checkbox</li>
-  <li>Submit- and "button" button</li>
-</ul>
-
-<Example>
-  <label>
-    Name
-    <input type="text" placeholder="Full name" />
-  </label>
-  <label>
-    Some words about me
-    <textarea rows="3" cols="30"></textarea>
-  </label>
-
-  <div class="ctg-form-controls--row">
-    <label>
-      <input type="radio" name="beverage" value="coffee" />
-      Coffee
-    </label>
-    <label>
-      <input type="radio" name="beverage" value="tea" />
-      Tea
-    </label>
-    <label>
-      <input type="radio" name="beverage" value="other" />
-      Other
-    </label>
-  </div>
-
-  <label>
-    Favorite coutry
-    <select>
-      <option value="SE">Sweden</option>
-      <option value="NO">Norway</option>
-      <option value="DK">Denmark</option>
-    </select>
-  </label>
-
-  <label>
-    <input type="checkbox" name="ok" />
-    I understand
-  </label>
-
-  <input type="submit" value="Submit" />
-</Example>
-
-<h3 id="buttons">Buttons</h3>
-
-<p>
-  Buttons of type <em>button</em> or <em>submit</em> and inputs of type
-  <em>submit</em> are styled to stand out some, and also have some hover-focus
-  indication to them.
-</p>
-
-<Example>
-  <button type="button">A "button" button</button><br />
-  <button type="submit">A "submit" button</button><br />
-  <input type="submit" value="An input of type 'submit' button" />
-</Example>
-
-
-<h2 id="utility-classes">Utility classes</h2>
-
-<p>
-    There are utility classes for <a href="#utilities-layout">layout</a>,
-    <a href="#utilities-signal">signalling stuff</a> and for <a href="#utilities-formatting">formatting</a>.
-</p>
-
-<h3 id="utilities-layout">Layout helpers</h3>
-
-<div class="ctg-container">
-    <code>.ctg-root</code>
-    <p>
-       The class that triggers all the other styles. Wrap your document (or
-       section of it) with this class.  I usually give it to the <code>&lt;body></code>. 
-    </p>
-</div>
-
-<div class="ctg-container">
-    <code>.ctg-container</code>
-    <p>
-        Gives a container a max-width, horizontal centering and some nice padding.
-        Being mildly responsive, the padding is different for large and small screens,
-        should work fine.  I usually put this on <code>&lt;body></code> together with
-        the styles "trigger", the <code>.ctg-root</code> class.
-    </p>
-</div>
-
-
-<div class="ctg-container">
-    <code>.ctg-form-controls--row</code>
-    <p>
-        Wrapper to make a bunch of direct <code>&lt;label></code> children display horizontally
-        instead of column-wise. Example:
-    </p>
-
-    <Example>
-        <div class="ctg-form-controls--row">
-            <label>
-                <input type="radio" name="beverage" value="coffee" />
-                Coffee
-            </label>
-            <label>
-                <input type="radio" name="beverage" value="tea" />
-                Tea
-            </label>
-        </div>
-    </Example>
-</div>
-
-<div class="ctg-container">
-    <code>.ctg-form-controls--col</code>
-    <p>
-        Wrapper to explicitly make a bunch of direct <code>&lt;label></code> children display vertically
-        instead of column-wise. Example:
-    </p>
-
-    <Example>
-        <div class="ctg-form-controls--col">
-            <label>
-                <input type="checkbox" name="beverage" value="coffee" />
-                Coffee
-            </label>
-            <label>
-                <input type="checkbox" name="beverage" value="tea" />
-                Tea
-            </label>
-        </div>
-    </Example>
-</div>
-
-<h3 id="utilities-signal">UI signalling</h3>
-
-<h4>Notes</h4>
-
-<p>
-    Helps making small pieces of text stand out, for a user to take notice.
-    There are four different flavors of notes &mdash; see below:
-</p>
-
-<div class="ctg-container">
-    <Example>
-        <code>.ctg-note</code> - plain note
-        <div class="ctg-note">
-            Read more in the full user agreement text
-        </div><br>
-
-        <code>.ctg-note--info</code> - information
-        <div class="ctg-note--info">
-            You are now subscribed to the service!
-        </div><br>
-
-        <code>.ctg-note--warn</code> - warning
-        <div class="ctg-note--warn">
-            Running low on Pokèballs!
-        </div><br>
-
-        <code>.ctg-note--error</code> - error
-        <div class="ctg-note--error">
-            Timed out!
-        </div>
-    </Example>
-</div>
-
-<h4>Positive/negative</h4>
-<p>
-    Adds "positive" or "negative" styling to a container.<br>
-    Below they are applied to buttons, but they work on any element with content.
-</p>
-
-<div class="ctg-container">
-    <Example>
-        <button type="button">Plain button for reference</button><br><br>
-
-        <code>.ctg-general-yes</code> (positive)<br>
-        <button class="ctg-general-yes" type="button">Yes, subscribe!</button><br><br>
-
-        <code>.ctg-general-no</code> (negative)<br>
-        <button class="ctg-general-no" type="button">Delete item</button>
-    </Example>
-</div>
-
-
-<h4 id="utilities-formatting">Formatting</h4>
-
-<p>
-    These just apply a monospace font to a block of text.
-    Look at <code>.ctg-format--numerical</code> and <code>.ctg-format--date</code>,
-    respectively:
-</p>
-
-<div class="ctg-container">
-    <Example>
-        <p>
-            The grand total is <span class="ctg-format--numerical">$100</span>.
-        </p>
-        <p>
-            Today's date is <span class="ctg-format--date">2021-06-15</span>.
-        </p>
-    </Example>
-</div>
-
-
-<p>Have fun.</p>
+<HeadingsExample anchor="example-headings" />
+<ParagraphsExample anchor="example-paragraphs" />
+<HyperLinksExample anchor="example-hyperlinks" />
+<ListsExample anchor="example-lists" />
+<SectioningExample anchor="example-sectioning" />
+<QuotesAndEmphasisExample anchor="example-quotes-and-emphasis" />
+<FormControlsExample anchor="example-form-controls" />
+<UtilityClassesExample anchor="example-utility-classes" />
