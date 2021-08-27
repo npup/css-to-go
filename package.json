@@ -23,7 +23,7 @@
     "public/*.scss"
   ],
   "devDependencies": {
-    "astro": "0.19.1",
+    "astro": "^0.19.3",
     "filehound": "^1.17.4",
     "prettier": "^2.3.2"
   },

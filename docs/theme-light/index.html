@@ -1,100 +1,273 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CSS To Go - Example pages</title><link rel="stylesheet" href="/css-to-go/_astro/common-Z2sfGTq.css" type="text/css"></head><body class="ctg-root ctg-container ctg-theme--light"><h1>Example, light mode</h1><p>This page showcases some examples of the styles applied.</p><ul><li><a href="/css-to-go/theme-dark">See dark mode</a></li><li>
-        Go to <a href="/css-to-go/">overview</a>.
-    </li></ul><p>
-    There is <a href="#elements">element styling</a>, and there are a small number
-    of <a href="#utility-classes">utility classes</a>.  Read more below.
-</p><h2>Elements</h2><p>The elements that receive some special treatment are:<br><a href="#headings">Headings</a>, <a href="#paragraphs">Paragraphs</a>,
-<a href="#hyperlinks">Hyperlinks</a>, <a href="#lists">Lists</a>,
-<a href="#form-controls">Form controls</a>, and <a href="#buttons">Buttons</a>.
-
-</p><h3 id="headings">Headings</h3><p>Headings of level 1 - 4 are supported.</p><article class="example astro-wcVTeG5l"><h1>This is a h1</h1><h2>This is a h2</h2><h3>This is a h3</h3><h4>This is a h4</h4></article><h3>Paragraphs</h3><p>
-  Paragraphs have some styles of their own to enchance readability. It is mostly
-  a question of
-</p><ul><li>Line height</li><li>Max-width</li></ul><article class="example astro-wcVTeG5l"><p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam iusto
-    dignissimos obcaecati quo libero in quaerat nesciunt doloribus commodi,
-    dolorem maxime, animi earum ipsa vero dicta alias accusantium
-    necessitatibus! Odit.
-  </p><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sed nostrum
-    fugit! Odio, ullam et. Velit ex nam voluptatibus dolorum cupiditate vero
-    assumenda architecto voluptas ad explicabo, qui odio magni. Lorem ipsum
-    dolor sit amet consectetur, adipisicing elit. Tempore voluptate expedita
-    quia saepe exercitationem voluptatibus soluta ducimus consectetur minima,
-    minus, aliquid nisi veniam in tenetur alias dignissimos id debitis aut.
-  </p></article><h3 id="hyperlinks">Hyperlinks</h3><p>Links have some text-decoration and colors for hover/focus.</p><article class="example astro-wcVTeG5l"><p>
-    Behold - a link to <a href="http://example.com">an example page</a>. And
-    another one, to <a href="http://example.com">the same page</a>.
-  </p></article><h3 id="lists">Lists</h3><p>
-  Ordered and unordered lists are supported. In short, they are treated like
-  this:
-</p><ul><li>The list items keep any left-margin they may have</li><li>There is a hover style applied to the items</li><li>Ordered list items retain their list-style-type</li></ul><h4>Ordered list</h4><article class="example astro-wcVTeG5l"><ol><li>One potato</li><li>Two potatoes</li><li>Three potatoes</li><li>Four</li></ol></article><h4>Unordered list</h4><article class="example astro-wcVTeG5l"><ul><li>John</li><li>Paul</li><li>George</li><li>Ringo</li></ul></article><h3 id="form-controls">Form controls</h3><p>Some common form control elements are supported:</p><ul><li>Text input</li><li>Text field</li><li>Radio button</li><li>Select</li><li>Checkbox</li><li>Submit- and "button" button</li></ul><article class="example astro-wcVTeG5l"><label>
-    Name
-    <input type="text" placeholder="Full name"></label><label>
-    Some words about me
-    <textarea rows="3" cols="30"></textarea></label><div class="ctg-form-controls--row"><label><input type="radio" name="beverage" value="coffee">
-      Coffee
-    </label><label><input type="radio" name="beverage" value="tea">
-      Tea
-    </label><label><input type="radio" name="beverage" value="other">
-      Other
-    </label></div><label>
-    Favorite coutry
-    <select><option value="SE">Sweden</option><option value="NO">Norway</option><option value="DK">Denmark</option></select></label><label><input type="checkbox" name="ok">
-    I understand
-  </label><input type="submit" value="Submit"></article><h3 id="buttons">Buttons</h3><p>
-  Buttons of type <em>button</em> or <em>submit</em> and inputs of type
-  <em>submit</em> are styled to stand out some, and also have some hover-focus
-  indication to them.
-</p><article class="example astro-wcVTeG5l"><button type="button">A "button" button</button><br><button type="submit">A "submit" button</button><br><input type="submit" value="An input of type 'submit' button"></article><h2 id="utility-classes">Utility classes</h2><p>
-    There are utility classes for <a href="#utilities-layout">layout</a>,
-    <a href="#utilities-signal">signalling stuff</a> and for <a href="#utilities-formatting">formatting</a>.
-</p><h3 id="utilities-layout">Layout helpers</h3><div class="ctg-container"><code>.ctg-root</code><p>
-       The class that triggers all the other styles. Wrap your document (or
-       section of it) with this class.  I usually give it to the <code>&lt;body&gt;</code>. 
-    </p></div><div class="ctg-container"><code>.ctg-container</code><p>
-        Gives a container a max-width, horizontal centering and some nice padding.
-        Being mildly responsive, the padding is different for large and small screens,
-        should work fine.  I usually put this on <code>&lt;body&gt;</code> together with
-        the styles "trigger", the <code>.ctg-root</code> class.
-    </p></div><div class="ctg-container"><code>.ctg-form-controls--row</code><p>
-        Wrapper to make a bunch of direct <code>&lt;label&gt;</code> children display horizontally
-        instead of column-wise. Example:
-    </p><article class="example astro-wcVTeG5l"><div class="ctg-form-controls--row"><label><input type="radio" name="beverage" value="coffee">
-                Coffee
-            </label><label><input type="radio" name="beverage" value="tea">
-                Tea
-            </label></div></article></div><div class="ctg-container"><code>.ctg-form-controls--col</code><p>
-        Wrapper to explicitly make a bunch of direct <code>&lt;label&gt;</code> children display vertically
-        instead of column-wise. Example:
-    </p><article class="example astro-wcVTeG5l"><div class="ctg-form-controls--col"><label><input type="checkbox" name="beverage" value="coffee">
-                Coffee
-            </label><label><input type="checkbox" name="beverage" value="tea">
-                Tea
-            </label></div></article></div><h3 id="utilities-signal">UI signalling</h3><h4>Notes</h4><p>
-    Helps making small pieces of text stand out, for a user to take notice.
-    There are four different flavors of notes — see below:
-</p><div class="ctg-container"><article class="example astro-wcVTeG5l"><code>.ctg-note</code> - plain note
-        <div class="ctg-note">
-            Read more in the full user agreement text
-        </div><br><code>.ctg-note--info</code> - information
-        <div class="ctg-note--info">
-            You are now subscribed to the service!
-        </div><br><code>.ctg-note--warn</code> - warning
-        <div class="ctg-note--warn">
-            Running low on Pokèballs!
-        </div><br><code>.ctg-note--error</code> - error
-        <div class="ctg-note--error">
-            Timed out!
-        </div></article></div><h4>Positive/negative</h4><p>
-    Adds "positive" or "negative" styling to a container.<br>
-    Below they are applied to buttons, but they work on any element with content.
-</p><div class="ctg-container"><article class="example astro-wcVTeG5l"><button type="button">Plain button for reference</button><br><br><code>.ctg-general-yes</code> (positive)<br><button class="ctg-general-yes" type="button">Yes, subscribe!</button><br><br><code>.ctg-general-no</code> (negative)<br><button class="ctg-general-no" type="button">Delete item</button></article></div><h4 id="utilities-formatting">Formatting</h4><p>
-    These just apply a monospace font to a block of text.
-    Look at <code>.ctg-formatted-numerical</code> and <code>.ctg-formatted-date</code>,
-    respectively:
-</p><div class="ctg-container"><article class="example astro-wcVTeG5l"><p>
-            The grand total is <span class="ctg-formatted-numerical">$100</span>.
-        </p><p>
-            Today's date is <span class="ctg-formatted-date">2021-06-15</span>.
-        </p></article></div><p>Have fun.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS To Go - Example pages</title>
+    <link
+      rel="stylesheet"
+      href="/css-to-go/_astro/common-Z2sfGTq.css"
+      type="text/css"
+    />
+  </head>
+  <body class="ctg-root ctg-container ctg-theme--light">
+    <h1>Example, light mode</h1>
+    <p>This page showcases some examples of the styles applied.</p>
+    <ul>
+      <li><a href="/css-to-go/theme-dark">See dark mode</a></li>
+      <li>Go to <a href="/css-to-go/">overview</a>.</li>
+    </ul>
+    <p>
+      There is <a href="#elements">element styling</a>, and there are a small
+      number of <a href="#utility-classes">utility classes</a>. Read more below.
+    </p>
+    <h2>Elements</h2>
+    <p>
+      The elements that receive some special treatment are:<br /><a
+        href="#headings"
+        >Headings</a
+      >, <a href="#paragraphs">Paragraphs</a>,
+      <a href="#hyperlinks">Hyperlinks</a>, <a href="#lists">Lists</a>,
+      <a href="#form-controls">Form controls</a>, and
+      <a href="#buttons">Buttons</a>.
+    </p>
+    <h3 id="headings">Headings</h3>
+    <p>Headings of level 1 - 4 are supported.</p>
+    <article class="example astro-wcVTeG5l">
+      <h1>This is a h1</h1>
+      <h2>This is a h2</h2>
+      <h3>This is a h3</h3>
+      <h4>This is a h4</h4>
+    </article>
+    <h3>Paragraphs</h3>
+    <p>
+      Paragraphs have some styles of their own to enchance readability. It is
+      mostly a question of
+    </p>
+    <ul>
+      <li>Line height</li>
+      <li>Max-width</li>
+    </ul>
+    <article class="example astro-wcVTeG5l">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam iusto
+        dignissimos obcaecati quo libero in quaerat nesciunt doloribus commodi,
+        dolorem maxime, animi earum ipsa vero dicta alias accusantium
+        necessitatibus! Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sed
+        nostrum fugit! Odio, ullam et. Velit ex nam voluptatibus dolorum
+        cupiditate vero assumenda architecto voluptas ad explicabo, qui odio
+        magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+        voluptate expedita quia saepe exercitationem voluptatibus soluta ducimus
+        consectetur minima, minus, aliquid nisi veniam in tenetur alias
+        dignissimos id debitis aut.
+      </p>
+    </article>
+    <h3 id="hyperlinks">Hyperlinks</h3>
+    <p>Links have some text-decoration and colors for hover/focus.</p>
+    <article class="example astro-wcVTeG5l">
+      <p>
+        Behold - a link to <a href="http://example.com">an example page</a>. And
+        another one, to <a href="http://example.com">the same page</a>.
+      </p>
+    </article>
+    <h3 id="lists">Lists</h3>
+    <p>
+      Ordered and unordered lists are supported. In short, they are treated like
+      this:
+    </p>
+    <ul>
+      <li>The list items keep any left-margin they may have</li>
+      <li>There is a hover style applied to the items</li>
+      <li>Ordered list items retain their list-style-type</li>
+    </ul>
+    <h4>Ordered list</h4>
+    <article class="example astro-wcVTeG5l">
+      <ol>
+        <li>One potato</li>
+        <li>Two potatoes</li>
+        <li>Three potatoes</li>
+        <li>Four</li>
+      </ol>
+    </article>
+    <h4>Unordered list</h4>
+    <article class="example astro-wcVTeG5l">
+      <ul>
+        <li>John</li>
+        <li>Paul</li>
+        <li>George</li>
+        <li>Ringo</li>
+      </ul>
+    </article>
+    <h3 id="form-controls">Form controls</h3>
+    <p>Some common form control elements are supported:</p>
+    <ul>
+      <li>Text input</li>
+      <li>Text field</li>
+      <li>Radio button</li>
+      <li>Select</li>
+      <li>Checkbox</li>
+      <li>Submit- and "button" button</li>
+    </ul>
+    <article class="example astro-wcVTeG5l">
+      <label>
+        Name
+        <input type="text" placeholder="Full name" /></label
+      ><label>
+        Some words about me
+        <textarea rows="3" cols="30"></textarea>
+      </label>
+      <div class="ctg-form-controls--row">
+        <label
+          ><input type="radio" name="beverage" value="coffee" /> Coffee </label
+        ><label><input type="radio" name="beverage" value="tea" /> Tea </label
+        ><label
+          ><input type="radio" name="beverage" value="other" />
+          Other
+        </label>
+      </div>
+      <label>
+        Favorite coutry
+        <select>
+          <option value="SE">Sweden</option>
+          <option value="NO">Norway</option>
+          <option value="DK">Denmark</option>
+        </select></label
+      ><label><input type="checkbox" name="ok" /> I understand </label
+      ><input type="submit" value="Submit" />
+    </article>
+    <h3 id="buttons">Buttons</h3>
+    <p>
+      Buttons of type <em>button</em> or <em>submit</em> and inputs of type
+      <em>submit</em> are styled to stand out some, and also have some
+      hover-focus indication to them.
+    </p>
+    <article class="example astro-wcVTeG5l">
+      <button type="button">A "button" button</button><br /><button
+        type="submit"
+      >
+        A "submit" button</button
+      ><br /><input type="submit" value="An input of type 'submit' button" />
+    </article>
+    <h2 id="utility-classes">Utility classes</h2>
+    <p>
+      There are utility classes for <a href="#utilities-layout">layout</a>,
+      <a href="#utilities-signal">signalling stuff</a> and for
+      <a href="#utilities-formatting">formatting</a>.
+    </p>
+    <h3 id="utilities-layout">Layout helpers</h3>
+    <div class="ctg-container">
+      <code>.ctg-root</code>
+      <p>
+        The class that triggers all the other styles. Wrap your document (or
+        section of it) with this class. I usually give it to the
+        <code>&lt;body&gt;</code>.
+      </p>
+    </div>
+    <div class="ctg-container">
+      <code>.ctg-container</code>
+      <p>
+        Gives a container a max-width, horizontal centering and some nice
+        padding. Being mildly responsive, the padding is different for large and
+        small screens, should work fine. I usually put this on
+        <code>&lt;body&gt;</code> together with the styles "trigger", the
+        <code>.ctg-root</code> class.
+      </p>
+    </div>
+    <div class="ctg-container">
+      <code>.ctg-form-controls--row</code>
+      <p>
+        Wrapper to make a bunch of direct <code>&lt;label&gt;</code> children
+        display horizontally instead of column-wise. Example:
+      </p>
+      <article class="example astro-wcVTeG5l">
+        <div class="ctg-form-controls--row">
+          <label
+            ><input type="radio" name="beverage" value="coffee" />
+            Coffee </label
+          ><label
+            ><input type="radio" name="beverage" value="tea" />
+            Tea
+          </label>
+        </div>
+      </article>
+    </div>
+    <div class="ctg-container">
+      <code>.ctg-form-controls--col</code>
+      <p>
+        Wrapper to explicitly make a bunch of direct
+        <code>&lt;label&gt;</code> children display vertically instead of
+        column-wise. Example:
+      </p>
+      <article class="example astro-wcVTeG5l">
+        <div class="ctg-form-controls--col">
+          <label
+            ><input type="checkbox" name="beverage" value="coffee" />
+            Coffee </label
+          ><label
+            ><input type="checkbox" name="beverage" value="tea" />
+            Tea
+          </label>
+        </div>
+      </article>
+    </div>
+    <h3 id="utilities-signal">UI signalling</h3>
+    <h4>Notes</h4>
+    <p>
+      Helps making small pieces of text stand out, for a user to take notice.
+      There are four different flavors of notes — see below:
+    </p>
+    <div class="ctg-container">
+      <article class="example astro-wcVTeG5l">
+        <code>.ctg-note</code> - plain note
+        <div class="ctg-note">Read more in the full user agreement text</div>
+        <br /><code>.ctg-note--info</code> - information
+        <div class="ctg-note--info">You are now subscribed to the service!</div>
+        <br /><code>.ctg-note--warn</code> - warning
+        <div class="ctg-note--warn">Running low on Pokèballs!</div>
+        <br /><code>.ctg-note--error</code> - error
+        <div class="ctg-note--error">Timed out!</div>
+      </article>
+    </div>
+    <h4>Positive/negative</h4>
+    <p>
+      Adds "positive" or "negative" styling to a container.<br />
+      Below they are applied to buttons, but they work on any element with
+      content.
+    </p>
+    <div class="ctg-container">
+      <article class="example astro-wcVTeG5l">
+        <button type="button">Plain button for reference</button
+        ><br /><br /><code>.ctg-general-yes</code> (positive)<br /><button
+          class="ctg-general-yes"
+          type="button"
+        >
+          Yes, subscribe!</button
+        ><br /><br /><code>.ctg-general-no</code> (negative)<br /><button
+          class="ctg-general-no"
+          type="button"
+        >
+          Delete item
+        </button>
+      </article>
+    </div>
+    <h4 id="utilities-formatting">Formatting</h4>
+    <p>
+      These just apply a monospace font to a block of text. Look at
+      <code>.ctg-format--numerical</code> and <code>.ctg-format--date</code>,
+      respectively:
+    </p>
+    <div class="ctg-container">
+      <article class="example astro-wcVTeG5l">
+        <p>
+          The grand total is <span class="ctg-format--numerical">$100</span>.
+        </p>
+        <p>Today's date is <span class="ctg-format--date">2021-06-15</span>.</p>
+      </article>
+    </div>
+    <p>Have fun.</p>
+  </body>
+</html>
