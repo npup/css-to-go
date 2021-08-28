@@ -23,7 +23,7 @@ styling. Recently, I've been thinking more and more like this:
 
 ## What does it look like?
 
-<div class=".ctg-form-controls--col">
+<div class="ctg-form-controls--col">
 
 <label>
     <input type="checkbox" onclick="document.body.classList.toggle('ctg-root')">
@@ -39,16 +39,16 @@ styling. Recently, I've been thinking more and more like this:
 
 ## What does it do?
 
-Basically, it is this:
+Basically, it does:
 
-1. Some element styling
-2. Makes available a small number of utility classes
+1. apply some styling on bare elements
+2. make available a small number of utility classes
 
-It is a quite small set of global `CSS` that is easy to apply to most any site.
+All in all, it is a quite small (1.93 kB, minified and gzipped) set of global `CSS` that is easy to apply to most any site.
 
 ### How to use it
 
-To enable _CSS To Go_, wrap your content with the class `.ctg-root` (putting it all the way up on the `<body>` tag works just fine).
+To enable _CSS To Go_, wrap your content with the CSS class `ctg-root` (putting it all the way up on the `<body>` tag works just fine).
 
     <!DOCTYPE html>
     <html>
@@ -56,26 +56,25 @@ To enable _CSS To Go_, wrap your content with the class `.ctg-root` (putting it 
         <title>Example</title>
         <link rel="stylesheet" href="/path/to/css-to-go.css">
     </head>
-    <body class="ctg-root">
+    <body class="ctg-root ctg-container ctg-theme--light">
 
         ... your content
 
     </body>
     </html>
 
-That's it! To switch theme, toggle the `ctg-theme--light` class for
-the appropriate portion of your content.
+That's it! To switch theme, toggle the `ctg-theme--light` class, which also applies to all that i is wrapping.  The `ctg-container` class is a totally optional (and typical) content wrapper class &mdash; read more about in the [examples](/examples#example-utility-classes--container).
 
 ### Element styling
 
-Most of its business is applying `CSS` to <em>tag names</em>, so no classes at
-all need be applied there.  Some of this can be seen on this very page, if you switch the theme on.
+Most of its business is applying `CSS` to <em>tag names</em>, so that no manual styling at all need be applied.  Such an effect can be seen on this very page, should you switch the theme on.
 
 ### Utility classes
 
 There are also a small number of utility classes, to help on those occasions
-that you just need a little something that you always need, but do not fancy
-bringing in all of [Tailwind CSS](https://tailwindcss.com/) or something similar.
+that you just got to have that little something that you "always need", but for which do
+not fancy bringing in all of [Tailwind CSS](https://tailwindcss.com/) or
+something similar.  Read more about this in the [examples, utility classes section](/examples#example-utility-classes).
 
-By the way, do use [Tailwind CSS](https://tailwindcss.com/)! It is awesome.
+By the way, _do_ use [Tailwind CSS](https://tailwindcss.com/)! It is awesome.
 

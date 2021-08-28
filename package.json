@@ -1,6 +1,6 @@
 {
   "name": "css-to-go",
-  "version": "0.9.15",
+  "version": "0.9.16",
   "license": "ISC",
   "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
   "author": "P.Envall <petter.envall@gmail.com>",

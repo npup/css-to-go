@@ -19,45 +19,45 @@ const { anchor } = Astro.props;
     There are <em>container</em>-, <em>note</em>-, <em>signal</em>-, and <em>formatter</em> classes.
 </p>
 
-<h3>Container</h3>
+<h3 id="example-utility-classes--container">Container</h3>
 <p>
     &mdash; is generally meant to be used as a wrapper for the whole content &mdash; though it could be
     used for just chunks, too.<br>
     Apart from some padding, it also gets (auto-) <code>margin</code> and <code>max-width</code> when the
-    viewport gets a bit large.  Typical page-wrapping behaviour!
+    viewport gets a bit large.  Typical page-wrapping behaviour.
 </p>
 
 <p>Personally, I like to put it on the <code>&lt;body></code> tag,
-    together with the style-enabling class, <code>.ctg-root</code>.</p>
+    together with the style-enabling class, <code>ctg-root</code>.</p>
 
 
 
-<h3>Note</h3>
+<h3 id="example-utility-classes--note">Note</h3>
 <p>
-    Utility classes that create something the looks notification-like.<br>
-    They comes in four flavours: <code>.ctg-note</code>, <code>.ctg-note--info</code>,
-    <code>.ctg-note--warn</code> and <code>.ctg-note--error</code>.
+    Utility classes that create something that looks notification-like.<br>
+    They come in four flavours: <code>ctg-note</code>, <code>ctg-note--info</code>,
+    <code>ctg-note--warn</code> and <code>ctg-note--error</code>.
 </p>
 
-<h3>Signal</h3>
+<h3 id="example-utility-classes--signal">Signal</h3>
 <p>
-    Quick way to turn something into a "yes", "no", or "watch out" thing.
-    These are the currently available signals:
+    Quick way to turn something into a <em>"yes"</em>, <em>"no"</em>,
+    or <em>"watch out"</em> thing. These are the currently available signals:
 </p>
 <ul>
-    <li><code>.ctg-signal--yes</code></li>
-    <li><code>.ctg-signal--no</code></li>
-    <li><code>.ctg-signal--warn</code></li>
+    <li><code>ctg-signal--yes</code></li>
+    <li><code>ctg-signal--no</code></li>
+    <li><code>ctg-signal--warn</code></li>
 </ul>
 See below for examples.
 
-<h3>Formatter</h3>
+<h3 id="example-utility-classes--formatter">Formatter</h3>
 <p>
     Those currently available are
 </p>
 <ul>
-    <li><code>.ctg-format--date</code></li>
-    <li><code>.ctg-format--numerical</code></li>
+    <li><code>ctg-format--date</code></li>
+    <li><code>ctg-format--numerical</code></li>
 </ul>
 
 <p>
@@ -102,19 +102,19 @@ See below for examples.
     </p>
     <label>
         <div>
-            <code>.ctg-signal--yes</code>
+            <code>ctg-signal--yes</code>
         </div>
         <button type="button" class="ctg-signal--yes">Yes</button>
     </label>
     <label>
         <div>
-            <code>.ctg-signal--no</code>
+            <code>ctg-signal--no</code>
         </div>
         <button type="button" class="ctg-signal--no">No</button>
     </label>
     <label>
         <div>
-            <code>.ctg-signal--warn</code>
+            <code>ctg-signal--warn</code>
         </div>
         <button type="button" class="ctg-signal--warn">Be careful</button>
     </label>
@@ -124,12 +124,12 @@ See below for examples.
 <h3>Formatters</h3>
 <div class="ctg-container">
 
-    <h4>.ctg-format--date</h4>
+    <h4>ctg-format--date</h4>
     <p>
         <span class="ctg-format--date">2021-06-15</span> vs. <span>2021-06-15</span> (unformatted).
     </p>
 
-    <h4>.ctg-format--numerical</h4>
+    <h4>ctg-format--numerical</h4>
     <p>
         <span class="ctg-format--numerical">12 768</span> vs. <span>12 768</span> (unformatted).
     </p> 
