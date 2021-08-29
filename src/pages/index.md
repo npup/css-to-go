@@ -63,7 +63,7 @@ To enable _CSS To Go_, wrap your content with the CSS class `ctg-root` (putting 
     </body>
     </html>
 
-That's it! To switch theme, toggle the `ctg-theme--light` class, which also applies to all that i is wrapping.  The `ctg-container` class is a totally optional (and typical) content wrapper class &mdash; read more about in the [examples](/examples#example-utility-classes--container).
+That's it! To switch theme, toggle the `ctg-theme--light` class, which also applies to all that it is wrapping.  The `ctg-container` class is a totally optional (and typical) content wrapper class &mdash; read more about in the [examples](/examples#example-utility-classes--container).
 
 ### Element styling
 
