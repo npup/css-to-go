@@ -1,6 +1,6 @@
 {
   "name": "css-to-go",
-  "version": "0.9.16",
+  "version": "0.0.0-semantic-release",
   "license": "ISC",
   "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
   "author": "P.Envall <petter.envall@gmail.com>",
@@ -23,8 +23,11 @@
     "public/*.scss"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "astro": "^0.19.3",
     "filehound": "^1.17.4",
+    "husky": "^7.0.2",
     "prettier": "^2.3.2"
   },
   "config": {
@@ -38,6 +41,8 @@
     "copy:dist": "cp docs-local/_astro/*.css dist/css-to-go.min.css && npx prettier docs-local/_astro/*.css > dist/css-to-go.css",
     "process:docs": "node scripts/updateBasePath.js $npm_package_config_basePath",
     "touch-nojekyll": "touch docs/.nojekyll",
-    "clean": "rm -rf docs docs-local dist && mkdir dist"
+    "clean": "rm -rf docs docs-local dist && mkdir dist",
+    "prepare": "husky install",
+    "lint-fix": "echo 'not linting/fixing yet'"
   }
 }
