@@ -1,9 +1,3 @@
-# NOTE
-
-> There are no releases or "stability" yet - things can and will change!
-
----
-
 # CSS-to-go
 
 
