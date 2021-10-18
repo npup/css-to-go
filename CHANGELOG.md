@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/npup/css-to-go/compare/v1.0.3...v1.1.0) (2021-10-18)
+
+
+### Features
+
+* **form controls:** add style to range input, like the one for text input ([012452f](https://github.com/npup/css-to-go/commit/012452fd23f7c169c68122d735a5920acc62c27d))
+
 ## [1.0.3](https://github.com/npup/css-to-go/compare/v1.0.2...v1.0.3) (2021-09-05)
 
 
