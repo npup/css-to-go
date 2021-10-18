@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/npup/css-to-go/compare/v1.0.2...v1.0.3) (2021-09-05)
+
+
+### Bug Fixes
+
+* **dependencies:** update version of dependency "astro" ([c586996](https://github.com/npup/css-to-go/commit/c586996bcc5e6e8faab2e45ce2b16833408cbaf7))
+
 ## [1.0.2](https://github.com/npup/css-to-go/compare/v1.0.1...v1.0.2) (2021-08-29)
 
 
