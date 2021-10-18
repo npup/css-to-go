@@ -9,7 +9,8 @@ const { anchor } = Astro.props;
         There is support for some of the most commonly used form controls, such as
     </p>
     <ul>
-        <li>Text inputs &mdash; <code>&lt;input type="text"></code> </li>
+        <li>Text inputs &mdash; <code>&lt;input type="text"></code></li>
+        <li>Range inputs &mdash; <code>&lt;input type="range"></code></li>
         <li>Text fields &mdash; <code>&lt;textarea></code></li>
         <li>Checkboxes &mdash; <code>&lt;input type="checkbox"></code></li>
         <li>Radio buttons &mdash; <code>&lt;input type="radio"></code></li>
@@ -36,6 +37,15 @@ const { anchor } = Astro.props;
     <label>
         User name
         <input type="text" />
+    </label>
+</div>
+
+
+<h3>Range input</h3>
+<div class="ctg-container">
+    <label>
+        Salary
+        <input type="range" min="0" max="10000" step="1000" />
     </label>
 </div>
 
