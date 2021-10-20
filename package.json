@@ -1,6 +1,6 @@
 {
   "name": "css-to-go",
-  "version": "0.0.0-semantic-release",
+  "version": "1.1.1",
   "license": "ISC",
   "description": "A bit of global CSS to help shape up the looks of a plain HTML document.  Has a dark mode and a light mode.",
   "author": "P.Envall <petter.envall@gmail.com>",
@@ -25,6 +25,8 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
     "astro": "^0.20.4",
     "filehound": "^1.17.4",
     "husky": "^7.0.2",

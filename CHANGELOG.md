@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/npup/css-to-go/compare/v1.1.0...v1.1.1) (2021-10-20)
+
+
+### Bug Fixes
+
+* **dependencies:** update dependencies that has been deemed vulnerable ([2aba420](https://github.com/npup/css-to-go/commit/2aba420adabb63a78382a5c1448daad23eeab068))
+* **package.json:** commit package json on release ([9fd00e2](https://github.com/npup/css-to-go/commit/9fd00e2b2e63083043041d394a70e90a5c1f3ce7))
+
 # [1.1.0](https://github.com/npup/css-to-go/compare/v1.0.3...v1.1.0) (2021-10-18)
 
 
