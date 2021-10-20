@@ -18,7 +18,7 @@ Import it for your bundler to handle
 
 `App.jsx`:
 
-    import from "css-to-go";
+    import "css-to-go";
 
 
 or just link to it inside node_modules.
