@@ -34,7 +34,7 @@ or just link to it inside node_modules.
       />
     </head>
 
-Then apply the "root selector" class `ctg-root` to trigger the styles (and possibly the utility class `ctg-container` too).  I normally make the document's body be that root:
+Then apply the "root selector" class `ctg-root` to trigger the styles (and possibly the utility class `ctg-container` too).  I normally make the document's `body` be that root:
 
 `index.html` (excerpt):
 
