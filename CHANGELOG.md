@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/npup/css-to-go/compare/v1.1.1...v1.2.0) (2021-10-20)
+
+
+### Features
+
+* **doc:** try to get over the versioning problem with release ([e2bbdcc](https://github.com/npup/css-to-go/commit/e2bbdcc0dd98ac1f86aecde863d370ef31626dfb))
+
 ## [1.1.1](https://github.com/npup/css-to-go/compare/v1.1.0...v1.1.1) (2021-10-20)
 
 
