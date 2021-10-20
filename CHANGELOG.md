@@ -4,6 +4,17 @@
 ### Bug Fixes
 
 * **dependencies:** update dependencies that has been deemed vulnerable ([2aba420](https://github.com/npup/css-to-go/commit/2aba420adabb63a78382a5c1448daad23eeab068))
+* **doc:** update README ([13ce2ee](https://github.com/npup/css-to-go/commit/13ce2ee361b377701735b3dddfcee758cbfbe1e7))
+* **package.json:** commit package json on release ([66f28c2](https://github.com/npup/css-to-go/commit/66f28c2270ae8e74111670f11940c76b6b0c922d))
+* **package.json:** commit package json on release ([9fd00e2](https://github.com/npup/css-to-go/commit/9fd00e2b2e63083043041d394a70e90a5c1f3ce7))
+* **release:** stop trying to commit package.json on release ([82512bd](https://github.com/npup/css-to-go/commit/82512bdc13b6a536a05460438f463f98706be6ad))
+
+## [1.1.1](https://github.com/npup/css-to-go/compare/v1.1.0...v1.1.1) (2021-10-20)
+
+
+### Bug Fixes
+
+* **dependencies:** update dependencies that has been deemed vulnerable ([2aba420](https://github.com/npup/css-to-go/commit/2aba420adabb63a78382a5c1448daad23eeab068))
 * **package.json:** commit package json on release ([9fd00e2](https://github.com/npup/css-to-go/commit/9fd00e2b2e63083043041d394a70e90a5c1f3ce7))
 
 # [1.1.0](https://github.com/npup/css-to-go/compare/v1.0.3...v1.1.0) (2021-10-18)
