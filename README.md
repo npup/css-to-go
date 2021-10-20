@@ -16,7 +16,7 @@ Learn more by looking at the [description overview](https://npup.github.io/css-t
 
 Import it for your bundler to handle
 
-`App.jsx`:
+`App.(jsx|svelte|whatever)`:
 
     import "css-to-go";
 
