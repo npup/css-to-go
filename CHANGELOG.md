@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/npup/css-to-go/compare/v1.2.0...v1.3.0) (2022-04-05)
+
+
+### Features
+
+* input[type=password] is styled like input[type=text] ([dd62866](https://github.com/npup/css-to-go/commit/dd628661b25c98f6d9668147186126eaa6702626))
+
 # [1.2.0](https://github.com/npup/css-to-go/compare/v1.1.1...v1.2.0) (2021-10-20)
 
 
