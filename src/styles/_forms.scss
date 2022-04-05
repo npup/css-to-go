@@ -11,6 +11,12 @@
       padding: var(--input-text-padding);
     }
 
+    & > input[type="password"] {
+        display: block;
+        margin-top: var(--margintop--input-text);
+        padding: var(--input-text-padding);
+    }
+
     & > input[type="range"] {
       display: block;
       margin-top: var(--margintop--input-text);
