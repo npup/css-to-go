@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/npup/css-to-go/compare/v1.3.0...v1.3.1) (2023-01-11)
+
+
+### Bug Fixes
+
+* trying at least ([9adbd26](https://github.com/npup/css-to-go/commit/9adbd264fd2d3418ced161d24036feaae995df17))
+* update node version for release script ([a3eb0d4](https://github.com/npup/css-to-go/commit/a3eb0d4ecb92bbd663b01c880998c96bbe950510))
+
 # [1.3.0](https://github.com/npup/css-to-go/compare/v1.2.0...v1.3.0) (2022-04-05)
 
 
