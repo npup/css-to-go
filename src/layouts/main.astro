@@ -1,5 +1,6 @@
 ---
 const { useCTG = false, theme = "dark" } = Astro.props;
+import "../styles/main.scss";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +9,6 @@ const { useCTG = false, theme = "dark" } = Astro.props;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS To Go - Example pages</title>
-    <link rel="stylesheet" href="/_astro/src/styles/main.css">
   </head>
   <body class={`${ useCTG ? "ctg-root" : "" } ctg-container ctg-theme--${theme}`}>
 
