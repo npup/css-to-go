@@ -1,9 +1,11 @@
+import { defineConfig } from "astro/config";
+
 const isProd = "production" === process.env.NODE_ENV;
 
-const dist = isProd ? "docs" : "docs-local";
-export default {
-  dist,
-  devOptions: {
+const outDir = isProd ? "docs" : "docs-local";
+export default defineConfig({
+    outDir,
+    server: {
     port: 3003,
   },
-};
+});
