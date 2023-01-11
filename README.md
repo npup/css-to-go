@@ -13,6 +13,18 @@ Learn more by looking at the [description overview](https://npup.github.io/css-t
 
 
 ## Usage
+### Via cdn
+
+An easy way to use it, here getting the latest and greatest version:
+
+    `index.html` (excerpt):
+
+    <head>
+        ...
+        <link href="https://unpkg.com/css-to-go" rel="stylesheet" />
+    </head>
+
+### Importing it in your build
 
 Import it for your bundler to handle
 
@@ -26,9 +38,7 @@ or just link to it inside node_modules.
 `index.html` (excerpt):
 
     <head>
-
       ...
-
       <link rel="stylesheet"
         href="[path to]/node_modules/css-to-go/dist/css-to-go.min.css"
       />
