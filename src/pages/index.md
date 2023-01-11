@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/main
+layout: ../layouts/main.astro
 ---
 
 # CSS To Go

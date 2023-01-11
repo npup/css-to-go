@@ -27,10 +27,11 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "astro": "^0.20.4",
+    "astro": "^1.9.1",
     "filehound": "^1.17.4",
     "husky": "^7.0.2",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "sass": "^1.57.1"
   },
   "config": {
     "basePath": "/css-to-go"
@@ -40,7 +41,7 @@
     "build": "astro build && cp -R docs-local docs",
     "prebuild": "npm run clean",
     "postbuild": "npm run copy:dist && npm run process:docs && npm run touch-nojekyll && echo '----- Done'",
-    "copy:dist": "cp docs-local/_astro/*.css dist/css-to-go.min.css && npx prettier docs-local/_astro/*.css > dist/css-to-go.css",
+    "copy:dist": "cp docs-local/assets/*.css dist/css-to-go.min.css && npx prettier docs-local/assets/*.css > dist/css-to-go.css",
     "process:docs": "node scripts/updateBasePath.js $npm_package_config_basePath",
     "touch-nojekyll": "touch docs/.nojekyll",
     "clean": "rm -rf docs docs-local dist && mkdir dist",
