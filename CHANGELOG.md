@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/npup/css-to-go/compare/v1.3.2...v1.3.3) (2023-01-11)
+
+
+### Bug Fixes
+
+* no longer ignore dist/ directory ([266c3f8](https://github.com/npup/css-to-go/commit/266c3f8ff27e6e281c3c40bf18a532702e080950))
+
 ## [1.3.2](https://github.com/npup/css-to-go/compare/v1.3.1...v1.3.2) (2023-01-11)
 
 
