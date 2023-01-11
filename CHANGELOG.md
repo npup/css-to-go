@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/npup/css-to-go/compare/v1.3.1...v1.3.2) (2023-01-11)
+
+
+### Bug Fixes
+
+* don't bundle the example pages css ffs ([236a97d](https://github.com/npup/css-to-go/commit/236a97d384c3c4e116d35c43bdaaf581695054dc))
+* regenerate package-lock.json ([67b3d4e](https://github.com/npup/css-to-go/commit/67b3d4e5282f27b7dd3192fd4ea6349f0a253e0d))
+* try to remove dist files from repo ([1cf45cd](https://github.com/npup/css-to-go/commit/1cf45cdc3cebe00ce77f19b7056dba9a88b3fd47))
+
 ## [1.3.1](https://github.com/npup/css-to-go/compare/v1.3.0...v1.3.1) (2023-01-11)
 
 
