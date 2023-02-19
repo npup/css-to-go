@@ -38,7 +38,7 @@
     },
     "scripts": {
         "start": "astro dev",
-        "build": "astro build && cp -R docs docs-local",
+        "build": "NODE_ENV=production astro build && cp -R docs docs-local",
         "prebuild": "npm run clean",
         "postbuild": "npm run copy:dist && npm run process:docs && npm run touch-nojekyll && echo '----- Done'",
         "copy:dist": "cat docs-local/_astro/*.css > dist/css-to-go.min.css && npx prettier docs-local/_astro/*.css > dist/css-to-go.css",
