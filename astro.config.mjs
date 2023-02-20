@@ -4,7 +4,7 @@ const isProd = "production" === process.env.NODE_ENV;
 
 const outDir = isProd ? "docs" : "docs-local";
 
-console.info("Astri building", { isProd, outDir });
+console.info("Astro building", { isProd, outDir });
 
 export default defineConfig({
     outDir,

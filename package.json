@@ -41,7 +41,7 @@
         "build": "NODE_ENV=production astro build && cp -R docs docs-local",
         "prebuild": "npm run clean",
         "postbuild": "npm run copy:dist && npm run process:docs && npm run touch-nojekyll && echo '----- Done'",
-        "copy:dist": "cat docs/_astro/*.css > dist/css-to-go.min.css && npx prettier docs/_astro/*.css > dist/css-to-go.css",
+        "copy:dist": "cat docs/assets/*.css > dist/css-to-go.min.css && npx prettier docs/assets/*.css > dist/css-to-go.css",
         "process:docs": "node scripts/updateBasePath.js $npm_package_config_basePath",
         "touch-nojekyll": "touch docs/.nojekyll",
         "clean": "rm -rf docs docs-local dist && mkdir dist",
