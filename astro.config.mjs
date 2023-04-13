@@ -1,14 +1,26 @@
 import { defineConfig } from "astro/config";
+import { config as npmConf } from "./package.json";
 
-const isProd = "production" === process.env.NODE_ENV;
+const env = "local" === process.env.NODE_ENV ? "local" : "prod";
 
-const outDir = isProd ? "docs" : "docs-local";
-
-console.info("Astro building", { isProd, outDir });
-
-export default defineConfig({
-    outDir,
-    server: {
-        port: 3003,
+const conf = {
+    local: {
+        outDir: npmConf.outDirLocal,
+        site: "http://localhost",
+        base: "/",
     },
+    prod: {
+        outDir: npmConf.outDirProd,
+    },
+};
+
+const astroConf = defineConfig({
+    server: {
+        port: 3000,
+    },
+    ...conf[env],
 });
+
+console.log("Conf:", { env, npmConf, astroConf });
+
+export default astroConf;

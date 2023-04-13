@@ -20,6 +20,7 @@
     --color-link--hover: var(--color-LIGHT_BLUE);
     --color-link--active: var(--color-LIGHT_BLUE);
     --color-headings: var(--color-LIGHT_BLUE);
+    --color-codepre-border: var(--color-DARK_BLUE);
     --color-table-head: var(--color-LIGHT_BLUE);
     --color-row--hover: var(--color-DARK_BLUE);
     --color-general--yes: var(--color-GREEN);
@@ -137,6 +138,10 @@
 .ctg-root code {
     color: var(--color-code);
 }
+.ctg-root code > pre {
+    border: 2px solid var(--color-codepre-border);
+    border-radius: var(--border-radius);
+}
 .ctg-root blockquote {
     font-style: italic;
     max-width: 30em;
@@ -244,11 +249,13 @@
 .ctg-root button[type="submit"]:hover {
     outline: -webkit-focus-ring-color auto 2px;
 }
-.ctg-root label > input[type="text"]:focus-visible,
-.ctg-root label > textarea:focus-visible,
-.ctg-root label > input[type="checkbox"]:focus-visible,
-.ctg-root label > input[type="radio"]:focus-visible,
-.ctg-root label > select:focus-visible {
+:is(
+        .ctg-root label > input[type="text"],
+        .ctg-root label > textarea,
+        .ctg-root label > input[type="checkbox"],
+        .ctg-root label > input[type="radio"],
+        .ctg-root label > select
+    ):focus-visible {
     outline-color: var(--outlinecolor-form-control--focus);
 }
 .ctg-form-controls--row label {
@@ -292,10 +299,7 @@
     background-color: var(--color-general--warn);
     color: var(--color-WHITE2);
 }
-.ctg-root .ctg-note,
-.ctg-root .ctg-note--error,
-.ctg-root .ctg-note--warn,
-.ctg-root .ctg-note--info {
+.ctg-root .ctg-note {
     color: var(--color-note);
     border-left: 0.5rem solid var(--color-LIGHT_BLUE);
     padding: 0.2rem 0 0.2rem 0.5rem;
@@ -303,12 +307,27 @@
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 .ctg-root .ctg-note--info {
+    color: var(--color-note);
+    border-left: 0.5rem solid var(--color-LIGHT_BLUE);
+    padding: 0.2rem 0 0.2rem 0.5rem;
+    background-color: var(--bgcolor-note);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     border-left-color: var(--color-LIGHT_GREEN);
 }
 .ctg-root .ctg-note--warn {
+    color: var(--color-note);
+    border-left: 0.5rem solid var(--color-LIGHT_BLUE);
+    padding: 0.2rem 0 0.2rem 0.5rem;
+    background-color: var(--bgcolor-note);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     border-left-color: var(--color-general--warn);
 }
 .ctg-root .ctg-note--error {
+    color: var(--color-note);
+    border-left: 0.5rem solid var(--color-LIGHT_BLUE);
+    padding: 0.2rem 0 0.2rem 0.5rem;
+    background-color: var(--bgcolor-note);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     border-left-color: var(--color-general--no);
 }
 .ctg-root {
