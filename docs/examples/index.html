@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS To Go - Example pages</title>
-  <link rel="stylesheet" href="/css-to-go/assets/index.3e4e6c40.css" /></head>
-  <body class="ctg-root ctg-container ctg-theme--dark">
-
-        <h1 id="top">CSS To Go - examples</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS To Go - Example pages</title>
+    <link rel="stylesheet" href="/_astro/index.a91bff40.css" /></head>
+    <body class="ctg-root ctg-container ctg-theme--dark">
+        
+    <h1 id="top">CSS To Go - examples</h1>
 
 <div>
     
-        Try <a href="/css-to-go/examples/theme-light">light mode</a>.
-    
-    &nbsp;Or go back to the <a href="/css-to-go/">overview</a>.
+        Try <a href="/examples/theme-light">light mode</a>.
+    &nbsp;Or go back to the <a href="/">overview</a>.
 </div>
 
 <p>
@@ -34,8 +32,6 @@
 
 <hr>
 
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
-
 <div class="example-section">
     <div class="heading">
         <h1 id="example-headings">Headings</h1>
@@ -51,15 +47,50 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <h1>Heading &lt;h1></h1><h2>Heading &lt;h2></h2><h3>Heading &lt;h3></h3><h4>Heading &lt;h4></h4>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
+            
+    
 
+    <h1>Heading &lt;h1></h1>
+    <h2>Heading &lt;h2></h2>
+    <h3>Heading &lt;h3></h3>
+    <h4>Heading &lt;h4></h4>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-paragraphs">Paragraphs</h1>
@@ -83,15 +114,19 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <p>
+            
+    
+
+    <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quae
         reprehenderit, sequi laborum ullam optio quas in consequuntur iste dolor
         dignissimos, reiciendis error possimus! In quisquam distinctio
         blanditiis perspiciatis molestiae?
-    </p><p>
+    </p>
+
+    <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro modi
         nulla dolores quod? Nesciunt facilis placeat, dignissimos numquam
         aperiam eum perferendis sed? Praesentium molestiae dolorum facilis
@@ -99,11 +134,41 @@
         earum? Atque iure accusantium voluptas! Aliquid, voluptatibus accusamus
         perferendis sequi vitae repellat similique eum dicta!
     </p>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-hyperlinks">Hyperlinks</h1>
@@ -119,20 +184,52 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <p>
+            
+    
+
+    <p>
         Do you want to visit one of the world's <a href="https://example.com/">most popular web pages</a>? Just go ahead!<br>
         Here is <a href="https://example.com/">another one</a>, albeit a bit
         less popular. There is currently no difference in appearance between <a href="https://example.com/">external links</a>
-        and <a href="/css-to-go/">relative links</a>, but that might change in the future.
+        and <a href="/">relative links</a>, but that might change in the future.
     </p>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-lists">Lists</h1>
@@ -148,10 +245,12 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <div>
+            
+    
+
+    <div>
         <h3>Ordered list</h3>
         <ol>
             <li>Cannonball Adderley</li>
@@ -166,11 +265,41 @@
             <li>George Garzone</li>
         </ul>
     </div>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="{anchor}">Sectioning</h1>
@@ -186,10 +315,12 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <div>
+            
+    
+
+    <div>
         <p>
             Lorem ipsum text that goes on for a while.<br>
             Talking about the fascinating amet consectetur adipisicing elit. And
@@ -200,11 +331,41 @@
         <hr>
         <p>Then follows some other text, equally fascinating.</p>
     </div>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-quotes-and-emphasis">Quotes and emphasis</h1>
@@ -222,23 +383,62 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <h3>&lt;code></h3><p>
+            
+    
+
+    <h3>&lt;code></h3>
+    <p>
         This is a sentence that mentions something and denotes it as code:<br><code>10 PRINT "HELLO"; GOTO 10;</code> &mdash; hopefully because it is.
-    </p><h3>&lt;em></h3><p>
+    </p>
+
+    <h3>&lt;em></h3>
+    <p>
         Some words in this sentence <em>really begged</em> to be <em>emphasized</em>!
-    </p><h3>&lt;blockquote></h3><div>
+    </p>
+
+    <h3>&lt;blockquote></h3>
+    <div>
         <blockquote cite="https://example.com/theory">
             In theory, there is no difference between practice and theory.
         </blockquote>
     </div>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-form-controls">Form controls</h1>
@@ -277,25 +477,38 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <h3>Text input</h3><div class="ctg-container">
+            
+    
+
+    <h3>Text input</h3>
+    <div class="ctg-container">
         <label>
             User name
             <input type="text">
         </label>
-    </div><h3>Range input</h3><div class="ctg-container">
+    </div>
+
+    <h3>Range input</h3>
+    <div class="ctg-container">
         <label>
             Salary
             <input type="range" min="0" max="10000" step="1000">
         </label>
-    </div><h3>Text area</h3><div class="ctg-container">
+    </div>
+
+    <h3>Text area</h3>
+    <div class="ctg-container">
         <label>
             Story of my life
             <textarea rows="4" cols="30"></textarea>
         </label>
-    </div><h3>Checkboxes and radio buttons</h3><h4>Checkboxes</h4><div class="ctg-container">
+    </div>
+
+    <h3>Checkboxes and radio buttons</h3>
+    <h4>Checkboxes</h4>
+    <div class="ctg-container">
         <label>
             <input type="checkbox" value="C">
             Cannonball Adderley
@@ -308,7 +521,10 @@
             <input type="checkbox" value="G">
             George Garzone
         </label>
-    </div><h4>Radio buttons</h4><div class="ctg-container">
+    </div>
+
+    <h4>Radio buttons</h4>
+    <div class="ctg-container">
         <label>
             <input type="radio" name="saxophonist-radio" value="C">
             Cannonball Adderley
@@ -321,7 +537,10 @@
             <input type="radio" name="saxophonist-radio" value="G">
             George Garzone
         </label>
-    </div><h4>Select</h4><div class="ctg-container">
+    </div>
+
+    <h4>Select</h4>
+    <div class="ctg-container">
         <label>
             Saxophonist
             <select>
@@ -330,7 +549,10 @@
                 <option value="G">George Garzone</option>
             </select>
         </label>
-    </div><h4>Buttons</h4><div class="ctg-container">
+    </div>
+
+    <h4>Buttons</h4>
+    <div class="ctg-container">
         <label>
             <div>
                 <code>&lt;button type="button"></code><br>
@@ -352,11 +574,41 @@
             <input type="submit" value="Submit">
         </label>
     </div>
-        </div>
-    </div>    
-</div>
-<link rel="stylesheet" href="/css-to-go/styles/example-styles.scss">
 
+        </div>
+    </div>
+</div>
+
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
 <div class="example-section">
     <div class="heading">
         <h1 id="example-utility-classes">Utility classes</h1>
@@ -423,10 +675,15 @@
     </div>
         </div>
 
-        
         <div class="example">
             <h2>Examples</h2>
-            <h3>Container</h3><p>Outlines applied for illustrative purposes.</p><div class="ctg-container">
+            
+    
+
+    <h3>Container</h3>
+
+    <p>Outlines applied for illustrative purposes.</p>
+    <div class="ctg-container">
         <div style="outline: 1px dashed red;">
             This is a <code>div</code> with <em>no</em> container class applied.
         </div>
@@ -435,7 +692,11 @@
             This is a <code>div</code> that
             <em>has</em>&nbsp;<code>class="ctg-container"</code> on it
         </div>
-    </div><h3>Notes</h3><div class="ctg-container">
+    </div>
+
+    <h3>Notes</h3>
+
+    <div class="ctg-container">
         <p class="ctg-note">
                     Using <code>class="ctg-note"</code>
                 </p><p class="ctg-note--info">
@@ -445,7 +706,10 @@
                 </p><p class="ctg-note--error">
                     Using <code>class="ctg-note--error"</code>
                 </p>
-    </div><h3>Signal</h3><div class="ctg-container">
+    </div>
+
+    <h3>Signal</h3>
+    <div class="ctg-container">
         <p>
             Below is an example where some plain buttons are turned into having
             "signals".
@@ -468,7 +732,10 @@
             </div>
             <button type="button" class="ctg-signal--warn">Be careful</button>
         </label>
-    </div><h3>Formatters</h3><div class="ctg-container">
+    </div>
+
+    <h3>Formatters</h3>
+    <div class="ctg-container">
         <h4>ctg-format--date</h4>
         <p>
             <span class="ctg-format--date">2021-06-15</span> vs. <span>2021-06-15</span> (unformatted).
@@ -479,8 +746,40 @@
             <span class="ctg-format--numerical">12 768</span> vs. <span>12 768</span> (unformatted).
         </p>
     </div>
+
         </div>
-    </div>    
+    </div>
 </div>
 
-  </body></html>
+<style>
+    .example-section {
+        border-bottom: 1px solid var(--color-row--hover);
+    }
+    .heading {
+        margin-right: 2rem;
+        & a {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .heading {
+            text-align: right;
+        }
+        .example-section {
+            display: flex;
+        }
+        .wrap {
+            flex: 1;
+        }
+        .description {
+            margin-top: 1.7rem;
+        }
+        .example {
+            margin: 1.5rem 0;
+            _border-top: 1px solid var(--color-row--hover);
+        }
+    }
+</style>
+
+    </body></html>

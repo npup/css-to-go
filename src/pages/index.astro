@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSS To Go - Example pages</title>
-    <link rel="stylesheet" href="/_astro/index.a91bff40.css" /></head>
-    <body class=" ctg-container ctg-theme--dark">
-        
+---
+import Layout from "@/layouts/main.astro";
+import { siteUrl } from "@/util";
+---
+
+<Layout>
     <h1>CSS To Go</h1>
 
     <p>
@@ -14,7 +11,9 @@
     </p>
 
     <p>
-        (This is the overview page. Also look at the examples of <a href="/examples">the standard theme</a> and <a href="/examples/theme-light">the light theme</a>).
+        (This is the overview page. Also look at the examples of <a
+            href={siteUrl("examples")}>the standard theme</a
+        > and <a href={siteUrl("examples/theme-light")}>the light theme</a>).
     </p>
 
     <h2>What is it?</h2>
@@ -29,26 +28,34 @@
             If only there was a small<sup>*</sup>
             <code>CSS</code> file that I could drop into the project just to get
             it over with instead!
-            </p><div style="margin-top: 1em; text-align: right;">
+            <div style="margin-top: 1em; text-align: right;">
                 <sup>*) For some value of "small"</sup>
             </div>
-        
+        </p>
     </blockquote>
 
     <p>
-        &mdash; so I created <a href="https://github.com/npup/css-to-go">CSS To Go</a>.
+        &mdash; so I created <a href="https://github.com/npup/css-to-go"
+            >CSS To Go</a
+        >.
     </p>
 
     <h2>What does it look like?</h2>
 
     <div class="ctg-form-controls--col">
         <label>
-            <input type="checkbox" onclick="document.body.classList.toggle('ctg-root')">
+            <input
+                type="checkbox"
+                onclick="document.body.classList.toggle('ctg-root')"
+            />
             Check this box to see what <em>CSS To Go</em> looks like
         </label>
 
         <label>
-            <input type="checkbox" onclick="document.body.classList.toggle('ctg-theme--light')">
+            <input
+                type="checkbox"
+                onclick="document.body.classList.toggle('ctg-theme--light')"
+            />
             Toggle theme (standard vs. light mode)
         </label>
     </div>
@@ -70,7 +77,9 @@
     <h3>How to use it</h3>
 
     <p>
-        To enable <em>CSS To Go</em>, wrap your content with the CSS class <code>ctg-root</code> (putting it all the way up on the <code>&lt;body&gt;</code> tag works just
+        To enable <em>CSS To Go</em>, wrap your content with the CSS class <code
+            >ctg-root</code
+        > (putting it all the way up on the <code>&lt;body&gt;</code> tag works just
         fine).
     </p>
 
@@ -93,8 +102,13 @@
 
     <p>
         That's it! To switch theme, toggle the <code>ctg-theme--light</code> class,
-        which also applies to all that it is wrapping. The <code>ctg-container</code> class is a totally optional (and typical) content wrapper class &mdash;
-        read more about in the <a href="/examples#example-utility-classes--container">examples</a>.
+        which also applies to all that it is wrapping. The <code
+            >ctg-container</code
+        > class is a totally optional (and typical) content wrapper class &mdash;
+        read more about in the <a
+            href={siteUrl("examples#example-utility-classes--container")}
+            >examples</a
+        >.
     </p>
 
     <h3>Element styling</h3>
@@ -110,7 +124,10 @@
     <p>
         There are also a small number of utility classes, to help on those
         occasions that you just got to have that little something that you
-        "always need", but for which do not fancy bringing in all of <a href="https://tailwindcss.com/">Tailwind CSS</a>] or something similar. Read more about this in the <a href="/examples#example-utility-classes">examples</a>, utility classes section.
+        "always need", but for which do not fancy bringing in all of <a
+            href="https://tailwindcss.com/">Tailwind CSS</a
+        >] or something similar. Read more about this in the <a
+            href={siteUrl("examples#example-utility-classes")}>examples</a
+        >, utility classes section.
     </p>
-
-    </body></html>
+</Layout>
