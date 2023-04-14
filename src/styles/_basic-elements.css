@@ -28,6 +28,9 @@
     & code > pre {
         border: 2px solid var(--color-codepre-border);
         border-radius: var(--border-radius);
+        margin: 1rem 0;
+        padding: 0.5rem;
+        white-space: break-spaces;
     }
 
     /** quote section */
