@@ -2,8 +2,8 @@ name: On creating a release, publish package to npm
 
 on:
     # Runs on creating a release
-    # release:
-    #     types: [published]
+    release:
+        types: [published]
     workflow_dispatch:
 jobs:
     build:
