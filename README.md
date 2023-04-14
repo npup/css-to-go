@@ -58,4 +58,4 @@ Then apply the "root selector" class `ctg-root` to trigger the styles (and possi
 
     npm start
 
-Navigate to http://localhost:3000/ (or was it?)
+Navigate to http://localhost:3000/
