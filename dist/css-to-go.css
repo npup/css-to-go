@@ -121,6 +121,9 @@
     margin: 0.8em 0;
     padding: 0 0 0 1rem;
 }
+.ctg-root :not(h1, h2, h3, h4) {
+    font-size: 1.12rem;
+}
 .ctg-root h1,
 .ctg-root h2,
 .ctg-root h3,
@@ -141,6 +144,10 @@
 .ctg-root code > pre {
     border: 2px solid var(--color-codepre-border);
     border-radius: var(--border-radius);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    white-space: break-spaces;
+    font-size: 1rem;
 }
 .ctg-root blockquote {
     font-style: italic;

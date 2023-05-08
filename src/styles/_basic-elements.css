@@ -1,4 +1,7 @@
 .ctg-root {
+    & :not(h1, h2, h3, h4) {
+        font-size: 1.12rem;
+    }
     /** Headings 1-4 */
     & h1,
     & h2,
@@ -31,6 +34,7 @@
         margin: 1rem 0;
         padding: 0.5rem;
         white-space: break-spaces;
+        font-size: 1rem;
     }
 
     /** quote section */
