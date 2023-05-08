@@ -184,6 +184,11 @@
 .ctg-root a:focus {
     color: var(--color-link--hover);
 }
+.ctg-root ul,
+.ctg-root ol,
+.ctg-root dl {
+    line-height: 1.4;
+}
 .ctg-root li {
     margin: var(--margin-list-item);
     padding: var(--padding-list-item);

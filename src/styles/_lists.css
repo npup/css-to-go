@@ -1,4 +1,9 @@
 .ctg-root {
+    & ul,
+    & ol,
+    & dl {
+        line-height: 1.4;
+    }
     & li {
         margin: var(--margin-list-item);
         padding: var(--padding-list-item);
