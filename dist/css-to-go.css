@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
 .ctg-root {
     --color-GREEN: #171;
     --color-LIGHT_GREEN: #8f8;
@@ -35,7 +36,7 @@
     --bordercolor-blockquote: var(--color-GRAY_LIGHT);
     --color-note: var(--color-text-main);
     --bgcolor-note: var(--color-row--hover);
-    --font-main: Lato, Avenir, Sans serif;
+    --font-main: Lato, Avenir, Arial, Sans serif;
     --font-formatted-numerical: Courier, Monospace, Sans serif;
     --font-formatted-date: Courier, Monospace, Sans serif;
     --transition--color: color 0.125s ease-in;
