@@ -1,3 +1,6 @@
+/* Because we are using Lato below */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
 .ctg-root {
     /** base colors */
 
