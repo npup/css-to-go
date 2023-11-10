@@ -49,7 +49,7 @@
     --bgcolor-note: var(--color-row--hover);
 
     /** fonts */
-    --font-main: Lato, Avenir, Sans serif;
+    --font-main: Lato, Avenir, Arial, Sans serif;
     --font-formatted-numerical: Courier, Monospace, Sans serif;
     --font-formatted-date: Courier, Monospace, Sans serif;
 
