@@ -7,7 +7,7 @@
   "homepage": "https://npup.github.io/css-to-go",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npup/css-to-go"
+    "url": "git+https://github.com/npup/css-to-go.git"
   },
   "config": {
     "outDirProd": "docs",
