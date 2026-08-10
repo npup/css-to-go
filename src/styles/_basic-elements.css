@@ -1,64 +1,68 @@
 .ctg-root {
-    & :not(h1, h2, h3, h4) {
-        font-size: 1.12rem;
-    }
-    /** Headings 1-4 */
-    & h1,
-    & h2,
-    & h3,
-    & h4 {
-        color: var(--color-headings);
-    }
+  & :not(h1, h2, h3, h4) {
+    font-size: 1.12rem;
+  }
+  /** Headings 1-4 */
+  & h1,
+  & h2,
+  & h3,
+  & h4 {
+    color: var(--color-headings);
+  }
 
-    /** Paragraph */
+  /** Paragraph */
+  & p {
+    line-height: var(--line-height-copy);
+    max-width: var(--max-width--copy);
+    padding-right: var(--padding-right--copy);
+  }
+
+  /** emphasis */
+  & em {
+    color: var(--color-em);
+  }
+
+  /** inline code */
+  & code {
+    color: var(--color-code);
+  }
+
+  /** block of code */
+  & code > pre {
+    border: 2px solid var(--color-codepre-border);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    white-space: break-spaces;
+    font-size: 1rem;
+  }
+
+  /** quote section */
+  & blockquote {
     & p {
-        line-height: var(--line-height-copy);
-        max-width: var(--max-width--copy);
-        padding-right: var(--padding-right--copy);
+      margin: 0;
     }
+    font-style: italic;
+    max-width: 30em;
+    border-left: 4px solid var(--bordercolor-blockquote);
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: var(--bgcolor-blockquote);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
 
-    /** emphasis */
-    & em {
-        color: var(--color-em);
-    }
+  /** separator */
+  & hr {
+    margin: 1.5rem 0;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--color-hr);
+    box-shadow: 0 0px 1px var(--color-hr);
+  }
 
-    /** inline code */
-    & code {
-        color: var(--color-code);
-    }
-
-    /** block of code */
-    & code > pre {
-        border: 2px solid var(--color-codepre-border);
-        border-radius: var(--border-radius);
-        margin: 1rem 0;
-        padding: 0.5rem;
-        white-space: break-spaces;
-        font-size: 1rem;
-    }
-
-    /** quote section */
-    & blockquote {
-        & p {
-            margin: 0;
-        }
-        font-style: italic;
-        max-width: 30em;
-        border-left: 4px solid var(--bordercolor-blockquote);
-        padding: 1rem;
-        margin-left: 1rem;
-        background-color: var(--bgcolor-blockquote);
-        border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    }
-
-    /** separator */
-    & hr {
-        margin: 1.5rem 0;
-        border: 0;
-        height: 2px;
-        width: 100%;
-        border-radius: var(--border-radius);
-        background-color: var(--color-hr);
-        box-shadow: 0 0px 1px var(--color-hr);
-    }
+  & section {
+    margin-block: 2rem;
+  }
 }
